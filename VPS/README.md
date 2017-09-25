@@ -144,6 +144,7 @@ grep "brute force attempt" /usr/local/cpanel/logs/login_log  | tail -n 20
 # View errors Apache
 grep "error" /usr/local/apache/logs/error_log | tail -n 20
 grep "error" /usr/local/cpanel/logs/login_log | tail -n 20
+```
 
 --------------------------------------------------------------------------------
 
