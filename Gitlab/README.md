@@ -22,7 +22,7 @@ gitlab-rake gitlab:backup:create
 ### Upgrade
 
 ```bash
-curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 sudo apt-get install gitlab-ee
 ```
 
