@@ -34,11 +34,11 @@ cat << "EOF" > $script_path/www/index.php
 EOF
 
 docker run --name lamp-$RAN3 \
-         -v $script_path/www:/var/www/html \
-         -p $WWW_PORT:80    \
-         -p $MYSQL_PORT:3306    \
-         -e MYSQL_PASS="${MYSQL_PASS}" \
-         -d tutum/lamp
+    -v $script_path/www:/var/www/html \
+    -p $WWW_PORT:80    \
+    -p $MYSQL_PORT:3306    \
+    -e MYSQL_PASS="${MYSQL_PASS}" \
+    -d tutum/lamp
 
 echo -e "
 ========================================================================
