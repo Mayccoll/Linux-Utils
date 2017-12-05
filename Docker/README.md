@@ -64,13 +64,14 @@ docker run --name cAdvisor\
 
 #### LAMP :ballot_box_with_check:
 
+https://github.com/fauria/docker-lamp
+
 ```bash
-docker run --name lamp \
+docker run --name Ubuntu-Lamp \
     -v $(pwd):/var/www/html \
     -p 80:80    \
     -p 3306:3306    \
-    -e MYSQL_PASS="admin123" \
-    -d tutum/lamp
+    -d fauria/lamp
 ```
 
 #### Nginx  :ballot_box_with_check:
