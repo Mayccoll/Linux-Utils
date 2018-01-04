@@ -26,31 +26,30 @@
   rsync -azrP source uesr@host:/destination
 ```
 
-- **Help**
+----------------------------------------------------------------------
+
+## Mount Driver
 
 ```bash
-  -v, --verbose               increase verbosity
-  -h, --human-readable        output numbers in a human-readable format
-  -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
-  -r, --recursive             recurse into directories
-  -P  --progress              show progress during transfer
-  
-  -z, --compress              compress file data during the transfer
+$
+ll /dev/disk/by-uuid/ && ll /dev/disk/by-label/
+
+sudo nano /etc/fstab
+
++++
+UUID=e2a5bf75-e511-4330-9f1e-efc114b9a47e /media/o/Tera  ext4    errors=remount-ro 0       1
+
 ```
 
 ----------------------------------------------------------------------
 
-## Montar Driver
+## Fix grub autodetect
 
 ```bash
-  $
-  ll /dev/disk/by-uuid/ && ll /dev/disk/by-label/
-
-  sudo nano /etc/fstab
-
-  +++
-  UUID=e2a5bf75-e511-4330-9f1e-efc114b9a47e /media/o/Tera  ext4    errors=remount-ro 0       1
-
+$
+sudo apt install os-prober
+sudo os-prober
+sudo update-grub
 ```
 
 ----------------------------------------------------------------------
