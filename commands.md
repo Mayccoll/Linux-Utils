@@ -34,7 +34,7 @@
 $
 ll /dev/disk/by-uuid/ && ll /dev/disk/by-label/
 
-sudo nano /etc/fstab
+sudo vim /etc/fstab
 
 +++
 UUID=e2a5bf75-e511-4330-9f1e-efc114b9a47e /media/o/Tera  ext4    errors=remount-ro 0       1
