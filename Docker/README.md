@@ -42,7 +42,7 @@
 
 ## Apps
 
-#### Seagull :ballot_box_with_check:
+#### :ballot_box_with_check: Seagull
 
 ```bash
 docker run  --name seagull \
@@ -50,7 +50,7 @@ docker run  --name seagull \
     -p 60020:10086 \
     -d tobegit3hub/seagull
 ```
-#### cAdvisor :ballot_box_with_check:
+#### :ballot_box_with_check: cAdvisor
 
 ```bash
 docker run --name cAdvisor\
@@ -62,7 +62,7 @@ docker run --name cAdvisor\
     -d google/cadvisor:latest
 ```
 
-#### LAMP :ballot_box_with_check:
+#### :ballot_box_with_check: LAMP
 
 https://github.com/fauria/docker-lamp
 
@@ -74,7 +74,7 @@ docker run --name Ubuntu-Lamp \
     -d fauria/lamp
 ```
 
-#### Nginx  :ballot_box_with_check:
+#### :ballot_box_with_check: Nginx
 
 - Static server - html
 
@@ -85,7 +85,7 @@ docker run --name nginx \
     -d nginx
 ```
 
-#### Apache Bitnami :ballot_box_with_check:
+#### :ballot_box_with_check: Apache Bitnami
 
 ```bash
 docker run --name apache \
@@ -106,7 +106,7 @@ docker run --name mariadb \
     -d mariadb
 ```
 
-#### Wordpress :ballot_box_with_check:
+#### :ballot_box_with_check: Wordpress
 
 ```bash
 docker run --name wordpress \
