@@ -1,0 +1,42 @@
+{
+	"auto_complete_selector": "source, text",
+	"bold_folder_labels": true,
+	"bracket_styles":
+	{
+		"default":
+		{
+			"color": "brackethighlighter.default",
+			"icon": "dot",
+			"style": "underline"
+		}
+	},
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"curly":
+	{
+		"color": "brackethighlighter.curly",
+		"icon": "curly_bracket",
+		"style": "underline"
+	},
+	"detect_slow_plugins": false,
+	"dictionary": "Packages/Dictionaries/Spanish.dic",
+	"elementary_folder_icons": true,
+	"font_size": 9,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_to_bracket": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"remember_open_files": true,
+	"save_on_focus_lost": false,
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Elementary Light 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

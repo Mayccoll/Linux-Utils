@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>Bash - Utils</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Utils</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Bash</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../mysql-README">Mysql</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li >
+                    <a rel="next" href="..">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../mysql-README">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#bash">Bash</a></li>
+        
+            <li><a href="#colors">|| Colors</a></li>
+        
+            <li><a href="#count-file-with-jquery">|| Count file with jquery</a></li>
+        
+            <li><a href="#count-php-files">|| Count php files</a></li>
+        
+            <li><a href="#show-lines-with-the-word-jquery">|| Show lines with the word 'jquery'</a></li>
+        
+            <li><a href="#show-lines-with-the-word-jquery-in-php-files">|| Show lines with the word 'jquery' in php files</a></li>
+        
+            <li><a href="#list-php-files">|| List php files</a></li>
+        
+            <li><a href="#count-number-of-lines-for-each-file-and-total">|| Count number of lines for each file and total</a></li>
+        
+            <li><a href="#loop">|| Loop</a></li>
+        
+            <li><a href="#check-if-git-status-gitstatus">|| Check if git status [gitstatus]</a></li>
+        
+            <li><a href="#if-command-output-contains">|| If command output contains</a></li>
+        
+            <li><a href="#exit-presing-enter">|| Exit presing ENTER</a></li>
+        
+            <li><a href="#ask-yes-or-no">||  Ask Yes or No</a></li>
+        
+            <li><a href="#insert-text-in-file">|| Insert Text in file</a></li>
+        
+            <li><a href="#execute-command-for-each-file-in-array">|| Execute command for each file in array</a></li>
+        
+            <li><a href="#grep-text-in-multiple-files-and-format-the-output">|| Grep text in multiple files and format the output</a></li>
+        
+            <li><a href="#list-all-files-and-exclude-extensions">|| List all files and exclude extensions</a></li>
+        
+            <li><a href="#get-current-directory-name-without-full-path">|| Get current directory name without full path</a></li>
+        
+            <li><a href="#delete-text-beetwen-2-words">|| Delete text beetwen 2 words</a></li>
+        
+            <li><a href="#echo-message">|| Echo message</a></li>
+        
+            <li><a href="#script-to-add-a-user-to-linux-system">|| Script to add a user to Linux system</a></li>
+        
+            <li><a href="#associative-array">|| associative array</a></li>
+        
+            <li><a href="#loop-through-all-keys-in-an-associative-array">|| Loop through all keys in an associative array</a></li>
+        
+            <li><a href="#count-file-with-jquery_1">|| Count file with jquery</a></li>
+        
+            <li><a href="#count-php-files_1">|| Count php files</a></li>
+        
+            <li><a href="#show-lines-with-the-word-jquery_1">|| Show lines with the word 'jquery'</a></li>
+        
+            <li><a href="#show-lines-with-the-word-jquery-in-php-files_1">|| Show lines with the word 'jquery' in php files</a></li>
+        
+            <li><a href="#list-php-files_1">|| List php files</a></li>
+        
+            <li><a href="#count-number-of-lines-for-each-file-and-total_1">|| Count number of lines for each file and total</a></li>
+        
+            <li><a href="#loop_1">|| Loop</a></li>
+        
+            <li><a href="#view-encoding-in-php-files">|| View encoding in php files</a></li>
+        
+            <li><a href="#remove-bom-carachters">|| Remove BOM carachters</a></li>
+        
+            <li><a href="#check-if-command-exist-or-app">|| Check if command exist or app</a></li>
+        
+            <li><a href="#view-folder-size">|| View Folder size</a></li>
+        
+            <li><a href="#make-the-tree-command-pretty-and-useful-by-default">|| Make the "tree" command pretty and useful by default**</a></li>
+        
+            <li><a href="#find">|| Find</a></li>
+        
+            <li><a href="#users">|| Users</a></li>
+        
+            <li><a href="#wget">|| wget</a></li>
+        
+            <li><a href="#get-external-ip">|| Get External IP**</a></li>
+        
+            <li><a href="#get-internal-ip">|| Get Internal IP**</a></li>
+        
+            <li><a href="#todos-los-paquetes-instaldados">|| Todos los paquetes instaldados**</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="bash">Bash</h1>
+<pre><code class="sh">    #!/bin/bash
+
+    # | Script Path
+    SCRIPT_PATH=&quot;$( cd &quot;$( dirname &quot;${BASH_SOURCE[0]}&quot; )&quot; &amp;&amp; pwd )&quot;
+
+    # | Script Path Folder
+    SCRIPT_DIR=`basename $SCRIPT_PATH`
+
+    # | Path from excute
+    PWD=&quot;$(pwd)&quot;
+
+    # | Path from excute
+    PWD_FOLDER=${PWD##*/}
+
+</code></pre>
+
+<h2 id="colors">|| Colors</h2>
+<pre><code class="sh"># Reset color
+RS=&quot;\e[0m&quot;
+# Basic Colors
+BLACK=&quot;\e[0;30m&quot;
+RED=&quot;\e[0;31m&quot;
+GREEN=&quot;\e[0;32m&quot;
+YELLOW=&quot;\e[0;33m&quot;
+BLUE=&quot;\e[0;34m&quot;
+PURPLE=&quot;\e[0;35m&quot;
+CYAN=&quot;\e[0;36m&quot;
+WHITE=&quot;\e[0;37m&quot;
+</code></pre>
+
+<h2 id="count-file-with-jquery">|| Count file with jquery</h2>
+<pre><code class="sh">    ack -l -r '(&lt;script)(.*?)(jquery)(.*?)(&lt;/script&gt;)' . | wc -l
+</code></pre>
+
+<h2 id="count-php-files">|| Count php files</h2>
+<pre><code class="sh">    ack -f --php | wc -l
+</code></pre>
+
+<h2 id="show-lines-with-the-word-jquery">|| Show lines with the word 'jquery'</h2>
+<pre><code class="sh">    ack 'jquery'
+</code></pre>
+
+<h2 id="show-lines-with-the-word-jquery-in-php-files">|| Show lines with the word 'jquery' in php files</h2>
+<pre><code class="sh">    ack --php 'jquery'
+</code></pre>
+
+<h2 id="list-php-files">|| List php files</h2>
+<pre><code class="sh">    ack -f --php
+</code></pre>
+
+<h2 id="count-number-of-lines-for-each-file-and-total">|| Count number of lines for each file and total</h2>
+<pre><code class="sh">    find . -name '*.php' | xargs wc -l
+</code></pre>
+
+<h2 id="loop">|| Loop</h2>
+<pre><code class="sh">    find . -name '*.php' |   while read file; do
+      [code ...]
+    done
+</code></pre>
+
+<pre><code class="sh">    find . -name '*.php' |   while read file; do; awk  '/jquery/ { print $0}' $file; done
+</code></pre>
+
+<h2 id="check-if-git-status-gitstatus">|| Check if git status [gitstatus]</h2>
+<pre><code class="sh">function func_all () {
+    cd $2
+    echo -e &quot;# | :::::: Repo: $1&quot;
+  if [ -n &quot;$(git status --porcelain)&quot; ]; then
+    git status
+  else
+    echo -e &quot;${green}CLEAN${RS}&quot;;
+    git branch
+    echo &quot;&quot;
+  fi
+}
+</code></pre>
+
+<h2 id="if-command-output-contains">|| If command output contains</h2>
+<pre><code class="sh">if [[ $(git remote -v ) != *gober* ]]; then
+  echo -e &quot;${red}Branch Incorrecta ${RS}&quot;
+  git remote -v
+fi
+</code></pre>
+
+<h2 id="exit-presing-enter">|| Exit presing ENTER</h2>
+<pre><code class="sh">function fun_salir () {
+  echo &quot;Presione ENTER para salir.&quot;
+  read x
+  exit
+}
+</code></pre>
+
+<h2 id="ask-yes-or-no">||  Ask Yes or No</h2>
+<pre><code class="sh">echo &quot;Quiere hacer un push origin master ?&quot;
+echo &quot;Si -&gt; [1]&quot;
+echo &quot;No -&gt; [2]&quot;
+read varpush
+if [[ $varpush -eq 1 ]] || [[ $varpush -eq &quot;&quot; ]]
+  then
+  ....... CODE .......
+fi
+</code></pre>
+
+<h2 id="insert-text-in-file">|| Insert Text in file</h2>
+<pre><code class="sh">cat &gt; $HOME/.zshrc &lt;&lt; &quot;EOF&quot;
+!*.php
+!*.html
+!*.js
+!*.css
+
+!*.png
+!*.jpg
+EOF
+</code></pre>
+
+<h2 id="execute-command-for-each-file-in-array">|| Execute command for each file in array</h2>
+<pre><code class="sh">#!/bin/bash
+array=(
+    &quot;./informes/general/con_cumplimientoe.php&quot;
+    &quot;./scripts/php/seguridad3.php&quot;
+    &quot;./scripts/php/seguridadmain.php&quot;
+)
+
+for ix in ${!array[*]};
+do
+    # awk '$0 ~ str{print NR-1 FS b}{b=$0}' str=&quot;conexion.php&quot; &quot;${array[$ix]}&quot;
+    head -15 &quot;${array[$ix]}&quot;    &gt;&gt; cabeceras.txt
+done
+</code></pre>
+
+<h2 id="grep-text-in-multiple-files-and-format-the-output">|| Grep text in multiple files and format the output</h2>
+<pre><code class="sh">#!/bin/bash
+grep -rn 'jquery' . | awk -F: '{print &quot;Line: &quot;$2 &quot;  -  &quot; $1 }'
+
+grep -rn 'jquery' . | awk -F: '{print &quot;Line number: &quot;$2 &quot;  -  &quot; $1}'
+
+grep -rn 'jquery' . | awk -F: '{print &quot;Line: &quot;$2 &quot;  -  &quot; $1 &quot;\n&quot; $3$4 &quot;\n\n\n&quot;}'
+</code></pre>
+
+<h2 id="list-all-files-and-exclude-extensions">|| List all files and exclude extensions</h2>
+<pre><code class="sh">find . -name '*.*' \
+-not -name &quot;*.php&quot; \
+-not -name &quot;*.png&quot; \
+-not -name &quot;*.gif&quot; \
+-not -name &quot;*.less&quot; \
+-not -name &quot;*.css&quot; \
+-not -name &quot;*.js&quot; \
+-not -name &quot;*.json&quot; \
+-not -name &quot;*.pdf&quot; \
+-not -name &quot;*.PDF&quot; \
+-not -name &quot;*.scss&quot; \
+-not -name &quot;*.html&quot; \
+-not -name &quot;*.TXT&quot; \
+-not -name &quot;*.txt&quot; \
+-not -name &quot;*.ttf&quot; \
+-not -name &quot;*.woff&quot; \
+-not -name &quot;*.eot&quot; \
+-not -name &quot;*.otf&quot; \
+-not -name &quot;*.svg&quot; \
+-not -name &quot;*.md&quot; \
+-not -name &quot;*.jpg&quot;
+</code></pre>
+
+<h2 id="get-current-directory-name-without-full-path">|| Get current directory name without full path</h2>
+<pre><code class="sh">  result=${PWD##*/}          # to assign to a variable
+
+  printf '%s\n' &quot;${PWD##*/}&quot; # to print to stdout
+                             # ...more robust than echo for unusual names
+                             #    (consider a directory named -e or -n)
+
+  printf '%q\n' &quot;${PWD##*/}&quot; # to print to stdout, quoted for use as shell input
+                           # ...useful to make hidden characters readable.
+</code></pre>
+
+<h2 id="delete-text-beetwen-2-words">|| Delete text beetwen 2 words</h2>
+<pre><code class="sh">func_delete_beetwen () {
+  sed -e &quot;/${1}/,/${2}/d&quot; $3 &gt; $3_tmp
+  cp $3_tmp $3
+  rm $3_tmp
+}
+
+WORD1='# |::::::::::::::::::&gt;&gt;&gt;antigen' # |&lt;=== Config This
+WORD2='# |::::::::::::::::::&lt;&lt;&lt;antigen' # |&lt;=== Config This
+FILEDEL=&quot;.zshrc&quot;
+
+func_delete_beetwen &quot;$WORD1&quot; &quot;$WORD2&quot; &quot;$FILEDEL&quot;
+</code></pre>
+
+<h2 id="echo-message">|| Echo message</h2>
+<pre><code class="sh">  function_title () {
+    echo &quot;# | ::::::::::::::::::::::::::::::::::: | #&quot;
+    echo &quot;# | $1&quot;
+    echo &quot;# | ::::::::::::::::::::::::::::::::::: | #&quot;
+  }
+</code></pre>
+
+<h2 id="script-to-add-a-user-to-linux-system">|| Script to add a user to Linux system</h2>
+<pre><code class="sh">if [ $(id -u) -eq 0 ]; then
+# read -p &quot;Enter username : &quot; username
+  username=&quot;mmm&quot;
+# read -s -p &quot;Enter password : &quot; password
+  password=&quot;mmm&quot;
+  egrep &quot;^$username&quot; /etc/passwd &gt;/dev/null
+  if [ $? -eq 0 ]; then
+    echo &quot;$username exists!&quot;
+    exit 1
+  else
+    pass=$(perl -e 'print crypt($ARGV[0], &quot;password&quot;)' $password)
+    useradd -m -p $pass $username
+    [ $? -eq 0 ] &amp;&amp; echo &quot;User has been added to system!&quot; || echo &quot;Failed to add a user!&quot;
+  fi
+else
+  echo &quot;Only root may add a user to the system&quot;
+  exit 2
+fi
+</code></pre>
+
+<h2 id="associative-array">|| associative array</h2>
+<pre><code class="sh">declare -A MYMAP=( [foo a]=bar [baz b]=quux )
+echo &quot;${!MYMAP[@]}&quot;  # Print all keys - quoted, but quotes removed by echo
+</code></pre>
+
+<h2 id="loop-through-all-keys-in-an-associative-array">|| Loop through all keys in an associative array</h2>
+<pre><code class="sh">for K in &quot;${!MYMAP[@]}&quot;; do echo $K; done
+</code></pre>
+
+<h2 id="count-file-with-jquery_1">|| Count file with jquery</h2>
+<pre><code class="sh">    ack -l -r '(&lt;script)(.*?)(jquery)(.*?)(&lt;/script&gt;)' . | wc -l
+    ack -l --php '../scripts/js/jquery-1.9.1.js' | wc -l
+</code></pre>
+
+<h2 id="count-php-files_1">|| Count php files</h2>
+<pre><code class="sh">    ack -f --php | wc -l
+</code></pre>
+
+<h2 id="show-lines-with-the-word-jquery_1">|| Show lines with the word 'jquery'</h2>
+<pre><code class="sh">    ack 'jquery'
+</code></pre>
+
+<h2 id="show-lines-with-the-word-jquery-in-php-files_1">|| Show lines with the word 'jquery' in php files</h2>
+<pre><code class="sh">    ack --php 'jquery'
+</code></pre>
+
+<h2 id="list-php-files_1">|| List php files</h2>
+<pre><code class="sh">    ack -f --php
+</code></pre>
+
+<h2 id="count-number-of-lines-for-each-file-and-total_1">|| Count number of lines for each file and total</h2>
+<pre><code class="sh">    find . -name '*.php' | xargs wc -l
+</code></pre>
+
+<h2 id="loop_1">|| Loop</h2>
+<pre><code class="sh">    find . -name '*.php' |   while read file; do
+      [code ...]
+    done
+
+    find . -name '*.php' |   while read file; do; awk  '/jquery/ { print $0}' $file; done
+</code></pre>
+
+<h2 id="view-encoding-in-php-files">|| View encoding in php files</h2>
+<pre><code class="sh">    find . -name '*.php' |   while read file; do; file -bi  $file; done
+</code></pre>
+
+<h2 id="remove-bom-carachters">|| Remove BOM carachters</h2>
+<pre><code class="sh">    find . -name '*.php' |   while read file; do;  \
+        sed -i 's/\xEF\xBB\xBF//' $file ; \
+    done
+</code></pre>
+
+<h2 id="check-if-command-exist-or-app">|| Check if command exist or app</h2>
+<pre><code class="sh">  git --version 2&gt;&amp;1 &gt;/dev/null
+  GIT_IS_AVAILABLE=$?
+  if [ $GIT_IS_AVAILABLE -eq 0 ]; then #...
+</code></pre>
+
+<h2 id="view-folder-size">|| View Folder size</h2>
+<pre><code class="sh">  $ du -hs .
+  $ du * | sort -n
+
+  $ du -h [FOLDER]
+  $ du -hc [FOLDER]
+  $ du -hs [FOLDER]
+  $ du -hs .
+  $ du -hs *
+  $ du -hs . --exclude=&quot;*.txt&quot;
+
+# Find 10 largest files/directories
+$ du -am /var | sort -n -r | head -n 10
+$ du -hsx * | sort -rh | head -10
+</code></pre>
+
+<h2 id="make-the-tree-command-pretty-and-useful-by-default">|| Make the "tree" command pretty and useful by default**</h2>
+<pre><code class="sh">    alias tree=&quot;tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst&quot;
+</code></pre>
+
+<h2 id="find">|| Find</h2>
+<ul>
+<li><strong>Get all extensions and their respective file count in a directory</strong></li>
+</ul>
+<pre><code class="sh">  $ find ./ -type f | grep -E &quot;.*\.[a-zA-Z0-9]*$&quot; | sed -e 's/.*\(\.[a-zA-Z0-9]*\)$/\1/' | sort | uniq -c | sort -n
+</code></pre>
+
+<ul>
+<li>**Find executable files</li>
+</ul>
+<pre><code class="sh">  $ find . -perm /a=x -type f
+</code></pre>
+
+<ul>
+<li>**Find executable files excluding .git folder</li>
+</ul>
+<pre><code class="sh">  $ find . -perm /a=x -type f -not -path &quot;./.git/*&quot;
+</code></pre>
+
+<ul>
+<li><strong>Find file on specific day</strong></li>
+</ul>
+<pre><code class="sh">  $ find ./ -type f -ls | grep 'jun'
+</code></pre>
+
+<ul>
+<li><strong>Find executable files</strong></li>
+</ul>
+<pre><code class="sh">  $ find . -perm /a=x -type f
+</code></pre>
+
+<ul>
+<li><strong>Find and count files with extention</strong></li>
+</ul>
+<pre><code class="sh">  $ find . -type f -name &quot;*.php&quot; | wc -l
+</code></pre>
+
+<ul>
+<li><strong>Count all the lines of code in a directory recursively</strong></li>
+</ul>
+<pre><code class="sh">  $ find . -name '*.php' | xargs wc -l
+</code></pre>
+
+<ul>
+<li><strong>Find modified files on especific day</strong></li>
+</ul>
+<pre><code class="sh">  $ find ./ -type f -ls | grep 'jun'
+
+    #with exclude directory
+    $ find ./ -type f ! -path &quot;./.git/*&quot; -ls | grep 'jun'
+</code></pre>
+
+<ul>
+<li><strong>Find Dupicate files</strong></li>
+</ul>
+<pre><code class="sh">  $ find -not -empty -type f -printf &quot;%s\n&quot; | sort -rn | uniq -d | xargs -I{} -n1 find -type f -size {}c -print0 | xargs -0 md5sum | sort | uniq -w32 --all-repeated=separate
+
+    # Duplicate Files
+    $ sudo apt-get install -y fdupes
+
+  $ fdupes -r .
+</code></pre>
+
+<h2 id="users">|| Users</h2>
+<ul>
+<li><strong>Show users - home</strong></li>
+</ul>
+<pre><code class="sh">  $ cat /etc/passwd | grep &quot;/home&quot; |cut -d: -f1
+</code></pre>
+
+<ul>
+<li><strong>Show users all and uid</strong></li>
+</ul>
+<pre><code class="sh">  $ awk -F&quot;:&quot; '{ print &quot;User: &quot; $1 &quot;\t\tuid:&quot; $3 }' /etc/passwd
+</code></pre>
+
+<ul>
+<li><strong>Show users all</strong></li>
+</ul>
+<pre><code class="sh">  $ cat /etc/passwd | cut -d &quot;:&quot; -f1
+</code></pre>
+
+<h2 id="wget">|| wget</h2>
+<pre><code class="sh">  $ wget -r -l1 --no-parent -nH -nd -P/tmp -A&quot;.gif,.jpg,.png&quot; http://example.com/images
+</code></pre>
+
+<h2 id="get-external-ip">|| Get External IP**</h2>
+<pre><code class="sh">  $ curl http://ipecho.net/plain
+
+  $ lynx --dump http://ipecho.net/plain
+
+  $ curl http://whatismyip.org/
+</code></pre>
+
+<h2 id="get-internal-ip">|| Get Internal IP**</h2>
+<pre><code class="sh">  $ /sbin/ifconfig eth0 | grep &quot;inet addr&quot; | awk -F: '{print $2}' | awk '{print $1}'
+</code></pre>
+
+<h2 id="todos-los-paquetes-instaldados">|| Todos los paquetes instaldados**</h2>
+<pre><code class="sh">  $ dpkg --get-selections &gt;&gt; paquetes-instalados.txt
+
+  $ grep install /var/log/dpkg.log &gt;&gt; paquetes-instalados.txt
+</code></pre>
+
+</div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/prettify-1.0.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>
