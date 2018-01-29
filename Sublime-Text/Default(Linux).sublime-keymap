@@ -1,0 +1,136 @@
+[
+
+/*
+    * Key Map
+
+    f1      ->  Replace Next
+    f2      ->  Find Preview
+    f3      ->  Find Next
+    f4      ->  Save
+    f5      ->
+    f6      ->  Build
+    f7      ->  FTP Upload
+    f8      ->  FTP Browse
+    f9      ->  Sort
+
+    ctrl+1  ->
+    ctrl+2  ->
+    ctrl+3  ->
+    ctrl+4  ->
+    ctrl+5  ->
+    ctrl+6  ->
+    ctrl+7  ->
+    ctrl+8  ->
+    ctrl+9  ->
+
+Emmet
+    ctrl+e            ---> Expand Abbreviation
+    tab               ---> Expand Abbreviation by Tab
+    ctrl+alt+enter    ---> Expant as you type
+    shift+ctrl+g      ---> Wrpa
+    shift+ctrl+'      ---> Rename Tag
+    ctrl+,            ---> Match Pair Outward
+    ctrl+D            ---> Match Pair
+    Ctrl+Alt+→        ---> Next Edit Point
+    Ctrl+Alt+←        ---> Previous Edit Point
+
+*/
+
+
+
+    // Comments
+    { "keys": ["alt+1"], "command": "toggle_comment" },
+    // htmlprettify
+    { "keys": ["alt+2"], "command": "htmlprettify" },
+    // CSScomb
+    { "keys": ["alt+3"], "command": "css_sorter" },
+    // Alignment
+    { "keys": ["alt+4"], "command": "alignment" },
+    // CSS  Primer
+    { "keys": ["alt+5"], "command": "css_primer_from_file"},
+    // Color Picker
+    { "keys": ["alt+6"], "command": "color_pick" },
+    // Delete Blank lines
+    { "keys": ["alt+7"], "command": "delete_blank_lines" },
+    // Spell Check
+    { "keys": ["alt+8"], "command": "toggle_setting", "args": {"setting": "spell_check"} },
+    // Close File
+    { "keys": ["alt+9"], "command": "close_file" },
+
+
+    // Replace Next
+    { "keys": ["f1"], "command": "replace_next" },
+    // Find Preview
+    { "keys": ["f2"], "command": "find_prev" },
+    // Find Next
+    { "keys": ["f3"], "command": "find_next" },
+    // Save
+    { "keys": ["f4"], "command": "save"},
+    // Build
+    { "keys": ["f6"], "command": "build" },
+    // Upload STFP
+    { "keys": ["f7"], "command": "sftp_upload_file" },
+    { "keys": ["f8"], "command": "sftp_browse_server" },
+    // Sort
+    { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
+
+
+    // Show Console
+    { "keys": ["ctrl+ñ"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+    // Show or Hide Menu
+    { "keys": ["alt+x"], "command": "toggle_menu"},
+    { "keys": ["alt+z"], "command": "toggle_side_bar"},
+
+    { "keys": ["ctrl+alt+f"],    "command": "side_bar_find_in_project", "args": {"paths": []} },
+
+    // Markdown Preview
+    { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser"} },
+    // Markdown Preview Cheat Sheet
+    { "keys": ["alt+shift+m"], "command": "markdown_cheatsheet", "args": {} },
+
+
+    // Emmet - Encode/Decode Image to data:URL
+    { "keys": ["ctrl+1"], "args": {"action": "encode_decode_data_url"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.encode_decode_data_url"}]},
+
+
+    // { "keys": ["shift+ctrl+l"],
+    //     "command": "run_multiple_commands",
+    //     "args": {
+    //         "commands": [
+    //             {  "command": "expand_selection", "args": {"to": "line"} },
+    //             {  "command": "wrap_as_you_type",
+    //                 "context": [
+    //                     {
+    //                         "operand": false,
+    //                         "operator": "equal",
+    //                         "match_all": true,
+    //                         "key": "setting.is_widget"
+    //                     },
+    //                     {
+    //                         "match_all": true,
+    //                         "key": "emmet_action_enabled.wrap_as_you_type"
+    //                     }
+    //                 ]
+    //             },
+    //         ]
+    //     }
+    // }
+
+
+]
+
+
+/*
+
+Multiple Commands
+    { "keys": ["f4"],
+    "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        {"command": "save", "context": "window"},
+        {"command": "less_to_css", "context": "window"},
+        {"command": "build", "context": "window"}
+    ]}}
+
+*/

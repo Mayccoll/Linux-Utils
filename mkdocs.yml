@@ -1,0 +1,17 @@
+site_name: Linux Utils
+
+theme:
+  name: 'material'
+  palette:
+      primary: 'light-blue'
+      accent: 'pink'
+
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.emoji:
+     emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+font:
+  text: 'Ubuntu'
+  code: 'Ubuntu Mono'

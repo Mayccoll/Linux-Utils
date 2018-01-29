@@ -1,0 +1,17 @@
+Options -Indexes
+Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+
+RewriteEngine on
+
+# Redirect all user to without WWW
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
+# Serve Drupal 7 from sub directory in web root
+RewriteRule ^$ www/index.php [L]
+RewriteCond %{DOCUMENT_ROOT}/www%{REQUEST_URI} -f
+RewriteRule .* www/$0 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* www/index.php?q=$0 [QSA]
