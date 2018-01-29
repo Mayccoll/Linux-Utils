@@ -17,15 +17,17 @@ Collection of scripts to install some essential programs.
 $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 ```
 
-        - Software-properties-common
-        - Python-software-properties
-        - Progress bar
-        - Git
-        - Curl
-        - Vim
-        - Htop
-        - Tree
-        - Ack
+```bash
+# - Software-properties-common
+# - Python-software-properties
+# - Progress bar
+# - Git
+# - Curl
+# - Vim
+# - Htop
+# - Tree
+# - Ack
+```
 
 ### Install Eessentials
 
@@ -33,12 +35,14 @@ $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 ```
 
-        - Essential tools for compiling from sources
-        - Packing software
-        - Zssh (zssh is a program for transferring files to a remote machine )
-        - Cloc (Count Lines of Code)
-        - Git Cloc
-        - Git Extras
+```bash
+# - Essential tools for compiling from sources
+# - Packing software
+# - Zssh (zssh is a program for transferring files to a remote machine )
+# - Cloc (Count Lines of Code)
+# - Git Cloc
+# - Git Extras
+```
 
 ### Install ZSH
 
@@ -46,12 +50,14 @@ $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
 ```
 
-        - Zsh
-        - Oh-My-ZSH
-        - Insert .zshrc
-        - Zsh Syntax highlighting
-        - ZSH Git Prompt
-        - Awesome Tterminal Fonts
+```bash
+# - Zsh
+# - Oh-My-ZSH
+# - Insert .zshrc
+# - Zsh Syntax highlighting
+# - ZSH Git Prompt
+# - Awesome Tterminal Fonts
+```
 
 ### Install Alias
 
@@ -71,8 +77,10 @@ $ wget -O xw  https://git.io/vKYsW && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 ```
 
-        - gPick
-        - Shutter
+```bash
+# - gPick
+# - Shutter
+```
 
 ### Install Useful Tools
 
@@ -80,12 +88,14 @@ $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 ```
 
-        - Samba
-        - Filezilla
-        - Mysql Workbench
-        - Remmina
-        - Cryptkeeper
-        - Meld
+```bash
+# - Samba
+# - Filezilla
+# - Mysql Workbench
+# - Remmina
+# - Cryptkeeper
+# - Meld
+```
 
 ### Install Customize
 
@@ -93,7 +103,9 @@ $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
 ```
 
-        - Grub Customizer
+```bash
+#  - Grub Customizer
+```
 
 ### Install Extras
 
@@ -101,11 +113,13 @@ $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 ```
 
-        - Pyrenamer
-        - DaemonFSk (Real time file watcher)
-        - Gufw
-        - Viewnior
-        - Nemo Rabbitvcs
+```bash
+# - Pyrenamer
+# - DaemonFSk (Real time file watcher)
+# - Gufw
+# - Viewnior
+# - Nemo Rabbitvcs
+```
 
 ### Install Docker
 
@@ -119,8 +133,10 @@ $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
 ```
 
-        - Nodejs
-        - npm
+```bash
+# - Nodejs
+# - npm
+```
 
 ### Install Python
 
