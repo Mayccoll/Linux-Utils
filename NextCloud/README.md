@@ -3,31 +3,33 @@
 ## Scan Files
 
 ```bash
-$
-cd /var/www/nextcloud
-sudo -u www-data php occ files:scan USER
+$ cd /var/www/nextcloud
+$ sudo -u www-data php occ files:scan USER
 ```
 
+## Clean Files
+```
+$ sudo -u www-data php occ files:cleanup
+```
 
-### Delete Log Files
+## Delete Log Files
 
 ```bash
-$
-echo "" | sudo tee /var/log/nextcloud.log
+$ echo "" | sudo tee /var/log/nextcloud.log
 ```
 
 ### Remove all deleted files
 
 ```bash
-cd /var/www/nextcloud
-sudo -u www-data php occ trashbin:cleanup
+$ cd /var/www/nextcloud
+$ sudo -u www-data php occ trashbin:cleanup
 ```
 
 ### Remove all deleted files for User
 
 ```bash
-cd /var/www/nextcloud
-sudo -u www-data php occ trashbin:cleanup user2 user4
+$ cd /var/www/nextcloud
+$ sudo -u www-data php occ trashbin:cleanup user2 user4
 ```
 
 
@@ -35,10 +37,9 @@ sudo -u www-data php occ trashbin:cleanup user2 user4
 
 # Install
 
-#### Create script to install LAMP
+#### Install LAMP
 
 ```bash
-cat >> /tmp/install-lamp.sh << "EOF"
 sudo apt update
 sudo apt install -y lamp-server^
 sudo apt install -y libxml2-dev php-zip php-dom php-xmlwriter php-xmlreader php-gd php-curl php-mbstring php-xml php-intl php-imagick php-bz2
@@ -50,7 +51,7 @@ sudo a2enmod mime
 sudo a2enmod ssl
 sudo a2ensite default-ssl
 sudo service apache2 reload
-EOF
+
 ```
 
 #### Install LAMP
