@@ -1,11 +1,18 @@
-Linux & Utils
-=============
+# Linux & Utils
 
 This is a collection of scripts, notes and personal knowledge about Linux and different programs and applications.
 
 :warning: **This repo is actually for personal use, but feel free to use or contribute, it if you find it useful.** :warning:
 
------
+--------------------------------------------------------------------------------
+
+## Linux Commands
+
+Collection of regularly used commands
+
+[Commands](./commands.md)
+
+--------------------------------------------------------------------------------
 
 ## Linux Fast Install
 
@@ -174,30 +181,22 @@ $ wget -O xw  https://git.io/vKYZi && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYZM && chmod +x xw && ./xw && rm xw
 ```
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
-**Note:** if you get ERROR: certificate add ```--no-check-certificate```
+**Note:** if you get ERROR: certificate add `--no-check-certificate`
 
 ```bash
 $ wget --no-check-certificate -O xt  http://git.io/vKYOP && chmod +x xt && ./xt && rm xt
 ```
 
--------------------------------------------------------------------------------
-
-## Linux Commands
-
-Collection of regularly used commands
-
-[Commands](./commands.md)
-
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## Install more nice stuffs
 
 - [Vagrant](https://www.vagrantup.com/downloads.html)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - [Kitematic](https://github.com/docker/kitematic)
-- [Angry IP Scanner ](http://angryip.org/)
+- [Angry IP Scanner](http://angryip.org/)
 
 ```bash
 sudo apt install -y alsamixergui
@@ -206,6 +205,7 @@ sudo apt install -y hardinfo
 sudo apt install -y inkscape
 sudo apt install -y uget
 ```
+
 ### Install Ansible
 
 ```bash
@@ -217,10 +217,10 @@ sudo apt-get install -y ansible
 
 ## [More Installs](./install.md)
 
--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ## MkDocs
 
-!!! Help "[Mkdocs](http://www.mkdocs.org/)"
+- [Mkdocs](http://www.mkdocs.org/)
 
-!!! Help "[Mkdocs Material](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)"
+- [Mkdocs Material](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)

@@ -204,7 +204,15 @@ wget \
 
 ----------------------------------------------------------------------
 
-## Open port
+## Firewall
+
+### Use ufw
+
+```bash
+sudo ufw allow 53
+```
+
+### Use Iptables
 
 - **Ubuntu**
 

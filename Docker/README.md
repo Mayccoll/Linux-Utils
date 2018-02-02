@@ -42,7 +42,7 @@
 
 ## Apps
 
-#### :ballot_box_with_check: Seagull
+#### Seagull :ballot_box_with_check:
 
 ```bash
 docker run  --name seagull \
@@ -50,7 +50,7 @@ docker run  --name seagull \
     -p 60020:10086 \
     -d tobegit3hub/seagull
 ```
-#### :ballot_box_with_check: cAdvisor
+#### cAdvisor :ballot_box_with_check:
 
 ```bash
 docker run --name cAdvisor\
@@ -62,9 +62,9 @@ docker run --name cAdvisor\
     -d google/cadvisor:latest
 ```
 
-#### :ballot_box_with_check: LAMP
+#### LAMP :ballot_box_with_check:
 
-https://github.com/fauria/docker-lamp
+[website](https://github.com/fauria/docker-lamp)
 
 ```bash
 docker run --name Ubuntu-Lamp \
@@ -74,7 +74,26 @@ docker run --name Ubuntu-Lamp \
     -d fauria/lamp
 ```
 
-#### :ballot_box_with_check: Nginx
+```bash
+docker exec -it 20543dd4 bash
+
+sudo apt-get install -y phpmyadmin --fix-missing
+
+sudo service apache2 restart
+
+sudo apt-get install -y wget
+
+wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+
+mysql>
+    use mysql;
+    update user set password=PASSWORD("admin123") where User='root';
+    flush privileges;
+    quit
+```
+
+
+#### Nginx :ballot_box_with_check:
 
 - Static server - html
 
@@ -85,7 +104,7 @@ docker run --name nginx \
     -d nginx
 ```
 
-#### :ballot_box_with_check: Apache Bitnami
+#### Apache Bitnami :ballot_box_with_check:
 
 ```bash
 docker run --name apache \
@@ -106,7 +125,7 @@ docker run --name mariadb \
     -d mariadb
 ```
 
-#### :ballot_box_with_check: Wordpress
+#### Wordpress :ballot_box_with_check:
 
 ```bash
 docker run --name wordpress \
