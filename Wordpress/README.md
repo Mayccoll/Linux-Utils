@@ -1,9 +1,27 @@
 # Wordpress
 
+## Rquirments
+
+OS with LTS (Long Term Support).
+
+- Ubuntu 16.04 LTS
+- Centos 7
+- Debian 8
+
+
+- PHP 7+ or PHP 5.6
+- MariaDB 10.0+ or MySQL 5.6+
+- mod_rewrite Apache module
+- Suport HTTPS
+- Suport GZIP
+- SSH Access (Important)
+- Cache services avariable
+
+--------------------------------------------------------------------------------
+
 ## Download
 
-http://wordpress.org/latest.tar.gz
-
+<http://wordpress.org/latest.tar.gz>
 
 --------------------------------------------------------------------------------
 
@@ -23,7 +41,7 @@ wp-content/uploads/.htaccess_
 
 ## Performance
 
-- ```.htaccess```
+- `.htaccess`
 
 ```bash
 ### BEGIN php tweaks ###
@@ -52,23 +70,22 @@ RewriteRule . /index.php [L]
 
 ## Wordmove :turtle:
 
-https://github.com/welaika/wordmove
+<https://github.com/welaika/wordmove>
 
-
-##### pre in local
+### pre in local
 
 ```bash
 $ sudo apt install mysql-client
 $ sudo apt install mysql-server
 ```
 
-##### install
+### install
 
 ```bash
 $ sudo gem install wordmove
 ```
 
-##### Use
+### Use
 
 - **Init**
 
@@ -108,9 +125,9 @@ $ wordmove pull -t
 
 --------------------------------------------------------------------------------
 
-## :cat: Wp-Cli
+## Wp-Cli :cat:
 
-http://wp-cli.org/#install
+<http://wp-cli.org/#install>
 
 ### Pre:
 
@@ -126,7 +143,6 @@ $
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
         chmod +x wp-cli.phar && \
         sudo mv wp-cli.phar /usr/local/bin/wp
-
 ```
 
 ### Use:
@@ -138,7 +154,7 @@ wp plugin install --activate all-in-one-wp-migration  admin-color-schemes
 
 --------------------------------------------------------------------------------
 
-## :pig: Permissions
+## Permissions :pig:
 
 ```bash
 $
@@ -149,112 +165,84 @@ sudo find FOLDER/ -type f -exec chmod 644 {} \;
 
 --------------------------------------------------------------------------------
 
-## :monkey: Plugins
-
-
-#### Development
-
--   [debug-bar](https://wordpress.org/plugins/debug-bar/)
--   [theme-check](https://wordpress.org/plugins/theme-check/)
-
-
-#### Esentials
-
--   [admin-menu-editor](https://wordpress.org/plugins/admin-menu-editor/)
--   [all-in-one-wp-migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
--   [broken-link-checker](https://wordpress.org/plugins/broken-link-checker/)
--   [client-documentation](https://wordpress.org/plugins/client-documentation/)
--   [disable-xml-rpc](https://wordpress.org/plugins/disable-xml-rpc/)
--   [duplicate-page](https://wordpress.org/plugins/duplicate-page/)
--   [metronet-tag-manager](https://wordpress.org/plugins/metronet-tag-manager/)
--   [flexible-posts-widget](https://wordpress.org/plugins/flexible-posts-widget/)
--   [hc-custom-wp-admin-url](https://wordpress.org/plugins/hc-custom-wp-admin-url/)
--   [media-library-assistant](https://wordpress.org/plugins/media-library-assistant/)
--   [ms-custom-login](https://wordpress.org/plugins/ms-custom-login/)
--   [osd-remove-all-wp-creds](https://wordpress.org/plugins/osd-remove-all-wp-creds/)
--   [post-state-tags](https://wordpress.org/plugins/post-state-tags/)
--   [quick-pagepost-redirect-plugin](https://wordpress.org/plugins/quick-pagepost-redirect-plugin/)
--   [simple-history](https://wordpress.org/plugins/simple-history/)
--   [siteorigin-panels](https://wordpress.org/plugins/siteorigin-panels/)
--   [wordfence](https://wordpress.org/plugins/wordfence/)
--   [wordpress-seo](https://wordpress.org/plugins/wordpress-seo/)
--   [wp-htaccess-control](https://wordpress.org/plugins/wp-htaccess-control/)
--   [wp-security-audit-log](https://wordpress.org/plugins/wp-security-audit-log/)
-
+## Plugins :monkey:
 
 ```bash
-wp plugin install \
-	admin-menu-editor \
-	all-in-one-wp-migration \
-	broken-link-checker \
-	client-documentation \
-	disable-xml-rpc \
-	duplicate-page \
-	metronet-tag-manager \
-	flexible-posts-widget \
-	hc-custom-wp-admin-url \
-	media-library-assistant \
-	ms-custom-login \
-	osd-remove-all-wp-creds \
-	post-state-tags \
-	quick-pagepost-redirect-plugin \
-	simple-history \
-	wordfence \
-	wordpress-seo \
-	wp-htaccess-control \
-	wp-security-audit-log    
+wp plugin install admin-menu-editor
 ```
 
-
-
-#### Basics
-
-- [hc-custom-wp-admin-url](https://wordpress.org/plugins/hc-custom-wp-admin-url)
-- [sem-external-links](https://wordpress.org/plugins/sem-external-links)
-- [simple-history](https://wordpress.org/plugins/simple-history)
-- [user-role-editor](https://wordpress.org/plugins/user-role-editor)
-- [webmaster-user-role](https://wordpress.org/plugins/webmaster-user-role)
-- [wp-db-backup](https://wordpress.org/plugins/wp-db-backup)
-- [wp-optimize](https://wordpress.org/plugins/wp-optimize)
-- [wpfront-user-role-editor](https://wordpress.org/plugins/wpfront-user-role-editor)
-
-
-#### Mpre nice plugins
-
-- [accesspress-social-icons](https://wordpress.org/plugins/accesspress-social-icons)
-- [advanced-menu-widget](https://wordpress.org/plugins/advanced-menu-widget)
-- [carousel-without-jetpack](https://wordpress.org/plugins/carousel-without-jetpack)
-- [disable-wordpress-updates](https://wordpress.org/plugins/disable-wordpress-updates)
-- [easy-social-icons](https://wordpress.org/plugins/easy-social-icons)
-- [featured-video-plus](https://wordpress.org/plugins/featured-video-plus)
-- [flexible-posts-widget](https://wordpress.org/plugins/flexible-posts-widget)
-- [latest-tweets-widget](https://wordpress.org/plugins/latest-tweets-widget)
-- [ml-slider](https://wordpress.org/plugins/ml-slider)
-- [open-external-links-in-a-new-window](https://wordpress.org/plugins/open-external-links-in-a-new-window)
-- [post-types-order](https://wordpress.org/plugins/post-types-order)
-- [regenerate-thumbnails](https://wordpress.org/plugins/regenerate-thumbnails)
-- [relative-url](https://wordpress.org/plugins/relative-url)
-- [responsive-add-ons](https://wordpress.org/plugins/responsive-add-ons)
-- [search-and-replace](https://wordpress.org/plugins/search-and-replace)
-- [simple-basic-contact-form](https://wordpress.org/plugins/simple-basic-contact-form)
-- [simple-responsive-slider](https://wordpress.org/plugins/simple-responsive-slider)
-- [social-media-feather](https://wordpress.org/plugins/social-media-feather)
-- [the-events-calendar](https://wordpress.org/plugins/the-events-calendar)
-- [video-list-manager](https://wordpress.org/plugins/video-list-manager)
-- [wp-attachments](https://wordpress.org/plugins/wp-attachments)
-- [wp-maintenance-mode](https://wordpress.org/plugins/wp-maintenance-mode)
-- [yop-poll](https://wordpress.org/plugins/yop-poll)
-- [disable-comments](https://wordpress.org/plugins/disable-comments)
-
-
-
-
-
-
+- accesspress-social-icons
+- add-to-any
+- admin-color-schemes
+- admin-menu-editor
+- advanced-menu-widge
+- all-in-one-wp-migration
+- carousel-without-jetpack
+- client-documentation
+- custom-content-type-manager
+- debug-bar
+- disable-comment
+- disable-wordpress-updates
+- disable-xml-rpc
+- duplicate-page
+- duracelltomi-google-tag-manager
+- easy-social-icon
+- featured-video-plus
+- flexible-posts-widget
+- hc-custom-wp-admin-url
+- latest-tweets-widge
+- login-customizer
+- media-library-assistant
+- menu-image
+- metronet-tag-manager
+- ml-slide
+- ms-custom-login
+- ns-redirection-and-ga-campaign-link-builder
+- open-external-links-in-a-new-window
+- osd-remove-all-wp-creds
+- p3-profiler
+- post-state-tags
+- post-types-orde
+- post-types-order
+- quick-pagepost-redirect-plugin
+- really-simple-ssl
+- regenerate-thumbnails
+- relative-ur
+- responsive-add-on
+- search-and-replac
+- sem-external-links
+- seo-ultimate
+- server-ip-memory-usage
+- server-status-littlebizzy
+- simple-basic-contact-form
+- simple-history
+- simple-responsive-slider
+- simple-wp-sitemap
+- siteorigin-panels
+- sitepress-multilingual-cms
+- social-media-feathe
+- the-events-calenda
+- theme-check
+- user-role-editor
+- video-list-manage
+- webmaster-user-role
+- wordfence
+- wordpress-seo
+- wp-attachment
+- wp-db-backup
+- wp-fastest-cache
+- wp-htaccess-control
+- wp-maintenance-mode
+- wp-optimize
+- wp-security-audit-log
+- wpfront-user-role-editoror
+- wpml-string-translation
+- wps-hide-login
+- yop-pol
 
 --------------------------------------------------------------------------------
 
-## :bear: Child Theme
+## Child Theme :bear:
 
 ```css
 /*
@@ -275,9 +263,9 @@ wp plugin install \
  * ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
  */
 ```
+--------------------------------------------------------------------------------
 
-
-### The Loop
+## The Loop
 
 ```php
 <?php
@@ -293,30 +281,28 @@ foreach( $myposts as $post ) : setup_postdata($post);
     the_post_thumbnail('full');
     the_title();
 endforeach;
-
 ```
-
 
 ### The Loop Custom Type
 
 ```php
 <?php
-	$arg = array(
-		'post_type' 			=> 'producto',
-		'category' 				=> 'hamburguesa',
-		'posts_per_page'  => -1
-	);
-	$loop = new WP_Query( $arg );
+    $arg = array(
+        'post_type'             => 'producto',
+        'category'                 => 'hamburguesa',
+        'posts_per_page'  => -1
+    );
+    $loop = new WP_Query( $arg );
 ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-	<h3><?php the_title(); ?></h3>
+    <h3><?php the_title(); ?></h3>
 
-	<ul>
-		<li><?php print_custom_field('product_desc'); ?></li>
-		<li><?php print_custom_field('product_price'); ?></li>
-	</ul>
-	<img src="<?php print_custom_field('product_img:to_image_src'); ?>" /><br />
+    <ul>
+        <li><?php print_custom_field('product_desc'); ?></li>
+        <li><?php print_custom_field('product_price'); ?></li>
+    </ul>
+    <img src="<?php print_custom_field('product_img:to_image_src'); ?>" /><br />
 
 <?php endwhile; wp_reset_query();
 ```
@@ -360,15 +346,15 @@ endforeach;
  */
 
  function wp_custom_menu( $menu_id ) {
- 	$menu_name = 'menu-home'; // specify custom menu slug
- 	if (  wp_get_nav_menu_object( $menu_id ) ) {
- 		$menu         = wp_get_nav_menu_object( $menu_id );
- 		$menu_items   = wp_get_nav_menu_items($menu->term_id);
+     $menu_name = 'menu-home'; // specify custom menu slug
+     if (  wp_get_nav_menu_object( $menu_id ) ) {
+         $menu         = wp_get_nav_menu_object( $menu_id );
+         $menu_items   = wp_get_nav_menu_items($menu->term_id);
 
- 		// $menu_list = "\t". '<nav>' ."\n";
- 		// $menu_list .= "\t\t". '<ul>' ."\n";
- 		foreach ((array) $menu_items as $key => $menu_item) {
- 			$title         = $menu_item->title;
+         // $menu_list = "\t". '<nav>' ."\n";
+         // $menu_list .= "\t\t". '<ul>' ."\n";
+         foreach ((array) $menu_items as $key => $menu_item) {
+             $title         = $menu_item->title;
              $url           = $menu_item->url;
              $image_size    = $menu_item->image_size;
              $image_menu    = wp_get_attachment_image($menu_item->thumbnail_id, $image_size);
@@ -380,13 +366,13 @@ endforeach;
              $menu_list .= '</a>' ."\n";
              $menu_list .= '</div>' ."\n";
 
- 		}
- 		// $menu_list .= "\t\t". '</ul>' ."\n";
- 		// $menu_list .= "\t". '</nav>' ."\n";
- 	} else {
- 		// $menu_list = '<!-- no list defined -->';
- 	}
- 	echo $menu_list;
+         }
+         // $menu_list .= "\t\t". '</ul>' ."\n";
+         // $menu_list .= "\t". '</nav>' ."\n";
+     } else {
+         // $menu_list = '<!-- no list defined -->';
+     }
+     echo $menu_list;
  }
 
 /*
@@ -395,5 +381,4 @@ endforeach;
 
  if (function_exists(wp_custom_menu(2))) wp_custom_menu(2);
  ?>
-
 ```
