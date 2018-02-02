@@ -1,6 +1,34 @@
-### Cambair Carpeta WWWW
+# Lamp
 
+## Find config files
 
+### MySQL
+
+```bash
+$ mysql --help | grep -A1 'Default options'
+OR
+$ mysqladmin --help | grep -A1 'Default options'
+```
+
+### PHP
+
+```bash
+$ php -i | grep "Loaded Configuration File"
+$ php -i | grep "php.ini"
+$ php -i | grep "memory"
+```
+
+### Apache
+
+```bash
+# ······· On CentOS/RHEL/Fedora ·······
+$ apachectl -V | grep SERVER_CONFIG_FILE
+
+# ······· On Debian/Ubuntu/Linux Mint ·······
+$ apache2ctl -V | grep SERVER_CONFIG_FILE
+```
+
+## Config ini file
 
 > php.ini
 

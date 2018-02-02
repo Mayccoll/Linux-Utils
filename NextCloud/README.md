@@ -1,18 +1,26 @@
 # NextCloud
 
-## Scan Files
+--------------------------------------------------------------------------------
+
+## CLI occ
+
+https://docs.nextcloud.com/server/12/admin_manual/configuration_server/occ_command.html?highlight=occ
+
+### Scan Files
 
 ```bash
 $ cd /var/www/nextcloud
 $ sudo -u www-data php occ files:scan USER
+# or
+$ sudo -u www-data php occ files:scan --all
 ```
 
-## Clean Files
+### Clean Files
 ```
 $ sudo -u www-data php occ files:cleanup
 ```
 
-## Delete Log Files
+### Delete Log Files
 
 ```bash
 $ echo "" | sudo tee /var/log/nextcloud.log
@@ -32,10 +40,23 @@ $ cd /var/www/nextcloud
 $ sudo -u www-data php occ trashbin:cleanup user2 user4
 ```
 
+--------------------------------------------------------------------------------
+
+## Delete unlock files in Database
+
+```sql
+SELECT * FROM nextcloud.oc_file_locks where nextcloud.oc_file_locks.lock = -1;
+SELECT * FROM nextcloud.oc_file_locks where nextcloud.oc_file_locks.lock = 1;
+SELECT * FROM nextcloud.oc_file_locks where nextcloud.oc_file_locks.lock = 2;
+```
+
+```sql
+DELETE FROM nextcloud.oc_file_locks where nextcloud.oc_file_locks.lock = 1;
+```
 
 --------------------------------------------------------------------------------
 
-# Install
+## Install
 
 #### Install LAMP
 
@@ -76,7 +97,6 @@ sudo tar -C /var/www -xvjf /tmp/nextcloud-10.0.1.tar.bz2
 #### Create script to install NextCloud
 
 ```bash
-cat >> /tmp/install-nextcloud.sh << "EOF"
 #!/bin/bash
 ocpath='/var/www/nextcloud'
 htuser='www-data'
@@ -115,7 +135,7 @@ if [ -f ${ocpath}/data/.htaccess ]
   chmod 0644 ${ocpath}/data/.htaccess
   chown ${rootuser}:${htgroup} ${ocpath}/data/.htaccess
 fi
-EOF
+
 ```
 
 #### Run install script
@@ -169,14 +189,12 @@ $ sudo service apache2 reload
 #### Create script to remove MariaDB
 
 ```bash
-cat >> /tmp/remove-mariadb.sh << "EOF"
 sudo systemctl stop mysql
 sudo apt -y remove --purge mysql-server mysql-client mysql-common
 sudo apt -y autoremove
 sudo apt -y autoclean
 sudo rm -rf /var/lib/mysql/
 sudo rm -rf /etc/mysql/
-EOF
 ```
 
 #### Remove MariaDB
@@ -189,13 +207,11 @@ sudo bash /tmp/remove-mariadb.sh
 #### Create script to install MariaDB
 
 ```bash
-cat >> /tmp/install-mariadb.sh << "EOF"
 sudo apt -y install php7.0-mysql mariadb-server mariadb-client
 sudo mysql_secure_installation
 sudo service mysql reload
 sudo service mysql status
 sudo apt -y install php-gettext phpmyadmin
-EOF
 ```
 
 #### Install MariaDB

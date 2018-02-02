@@ -1,49 +1,48 @@
-Brimir - Install Ubuntu trusty 14.04
-====================================
+# Brimir
 
-
+## Install Ubuntu trusty 14.04
 
 #### Install Dependencies
 
 ```bash
     $
-    sudo apt update
-    sudo apt -y upgrade
-    sudo apt install -y git-core \
-        curl \
-        zlib1g-dev \
-        build-essential \
-        libssl-dev \
-        libreadline-dev \
-        libyaml-dev \
-        libsqlite3-dev \
-        sqlite3 \
-        libxml2-dev \
-        libxslt1-dev \
-        libcurl4-openssl-dev \
-        python-software-properties \
-        libffi-dev \
-        libmysqlclient-dev \
-        libpcre3-dev \
-        nginx \
-        mysql-client \
-        mysql-server
+sudo apt update
+sudo apt -y upgrade
+sudo apt install -y git-core \
+    curl \
+    zlib1g-dev \
+    build-essential \
+    libssl-dev \
+    libreadline-dev \
+    libyaml-dev \
+    libsqlite3-dev \
+    sqlite3 \
+    libxml2-dev \
+    libxslt1-dev \
+    libcurl4-openssl-dev \
+    python-software-properties \
+    libffi-dev \
+    libmysqlclient-dev \
+    libpcre3-dev \
+    nginx \
+    mysql-client \
+    mysql-server
 ```
 
 #### Install Ruby
 
 ```bash
-    $
-    sudo apt-get -y remove --purge ruby
-    cd
-    wget http://ftp.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
-    tar -xzvf ruby-2.3.1.tar.gz
-    cd ruby-2.3.1/
-    ./configure
-    make
-    sudo make install
-    ruby -v
-    echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+$
+sudo apt-get -y remove --purge ruby
+cd
+wget http://ftp.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+tar -xzvf ruby-2.3.1.tar.gz
+cd ruby-2.3.1/
+./configure
+make
+sudo make install
+ruby -v
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
 
 #### Isntall Postgresql
