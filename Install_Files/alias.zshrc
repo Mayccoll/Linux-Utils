@@ -315,8 +315,6 @@ color () {
     echo -e "\e[0m\e[1;30m█████\\e[0m\e[1;31m█████\\e[0m\e[1;32m█████\\e[0m\e[1;33m█████\\e[0m\e[1;34m█████\\e[0m\e[1;35m█████\\e[0m\e[1;36m█████\\e[0m\e[1;37m█████\\e[0m"
 }
 
-# |::::::::::::: alias ::::::::::::::<<<
-PATH="$HOME/.local/bin:$PATH"
-
 # |::::::::::::: Disable Ansible Cow ::::::::::::::<<<
 export ANSIBLE_NOCOWS=1
+PATH="$HOME/.local/bin:$PATH"
