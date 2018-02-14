@@ -1,8 +1,8 @@
 alias sudo='sudo '
 
-alias ll='ls -Xalh --color=auto'
-alias la='ls -A --color=auto'
-alias l='ls -CF --color=auto'
+alias ll='ls -Xalh --color=auto --group-directories-first'
+alias la='ls -A --color=auto --group-directories-first'
+alias l='ls -CF --color=auto --group-directories-first'
 alias cc='clear'
 alias c='clear'
 alias ..='cd ..'
