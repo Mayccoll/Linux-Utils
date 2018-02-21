@@ -43,8 +43,7 @@ echo "¿ Want to add stars ?"
 echo "Si -> [1]"
 echo "No -> [2]"
 read varpush
-if [[ $varpush -eq 1 ]] || [[ $varpush -eq "" ]]
-  then
+if [[ $varpush -eq 1 ]] || [[ $varpush -eq "" ]] ; then
 
 FILE_ZSH="${HOME}/.zshrc"
 XXXXXBEGIN='# |::::::::::::: stars ::::::::::::::>>>' # |<=== Config This
