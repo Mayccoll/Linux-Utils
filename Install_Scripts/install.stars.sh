@@ -38,12 +38,12 @@ function_delete_beetwen () {
 # - **Install Stars**
 # ==============================================
 
-function_message_title '- Stars -'
-echo "¿ Want to add stars ?"
-echo "Si -> [1]"
-echo "No -> [2]"
-read varpush
-if [[ $varpush -eq 1 ]] || [[ $varpush -eq "" ]] ; then
+function_message_title '- Install Stars -'
+
+read -r -p "Do you want to continue [Y/n]? " response
+
+case "$response" in
+    [yY][eE][sS]|[yY])
 
 FILE_ZSH="${HOME}/.zshrc"
 XXXXXBEGIN='# |::::::::::::: stars ::::::::::::::>>>' # |<=== Config This
@@ -53,4 +53,9 @@ echo "${XXXXXBEGIN}" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux-Utils/master/Install_Files/stars.zshrc >> $FILE_ZSH
 echo "${XXXXXXXEND}" >> $FILE_ZSH
 
-fi
+
+    ;;
+    *)
+    echo "exit"
+    ;;
+esac
