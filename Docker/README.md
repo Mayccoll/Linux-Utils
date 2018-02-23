@@ -75,21 +75,21 @@ docker run --name Ubuntu-Lamp \
 ```
 
 ```bash
-docker exec -it 20543dd4 bash
+docker exec -it Ubuntu-Lamp bash
 
-sudo apt-get install -y phpmyadmin --fix-missing
+apt-get install -y phpmyadmin --fix-missing
 
-sudo service apache2 restart
+apt-get install -y wget
 
-sudo apt-get install -y wget
-
-wget -O xt  http://git.io/UBJMHQ && chmod +x xt && ./xt && rm xt
+mysql -uroot -padmin123
 
 mysql>
     use mysql;
     update user set password=PASSWORD("admin123") where User='root';
     flush privileges;
     quit
+
+service apache2 restart
 ```
 
 
