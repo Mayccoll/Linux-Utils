@@ -330,13 +330,19 @@ $
 sudo apt-get install php5-cli
 curl -sS https://getcomposer.org/installer | php
 
-sudo mv composer.phar /usr/bin/composer
+sudo mv composer.phar /usr/local/bin/composer
 
 composer global require "laravel/installer=~1.1"
 
 echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ${HOME}/.zshrc
 
 echo 'alias artisan="php artisan"' >> ${HOME}/.zshrc
+
+cat >> ${HOME}/.zshrc <<'endmsg'
+# | ::::::: Artisan php :::::::::::::::::::::::::::::::::::::::::::::::::::: >>>
+alias artisan="php artisan"
+# | ::::::: Artisan php :::::::::::::::::::::::::::::::::::::::::::::::::::: <<<
+endmsg
 ```
 
 ## Megadown

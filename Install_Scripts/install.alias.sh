@@ -38,8 +38,8 @@ function_delete_beetwen () {
 
 
 FILE_ZSH="${HOME}/.zshrc"
-XXXXXBEGIN='# |::::::::::::: alias ::::::::::::::>>>' # |<=== Config This
-XXXXXXXEND='# |::::::::::::: alias ::::::::::::::<<<' # |<=== Config This
+XXXXXBEGIN='# | ::::::: alias :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: >>>'
+XXXXXXXEND='# | ::::::: alias :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: <<<'
 function_delete_beetwen "\${XXXXXBEGIN}" "\${XXXXXXXEND}" "\${FILE_ZSH}"
 echo "${XXXXXBEGIN}" >> $FILE_ZSH
 wget -qO- https://raw.githubusercontent.com/Mayccoll/Linux-Utils/master/Install_Files/alias.zshrc >> $FILE_ZSH
