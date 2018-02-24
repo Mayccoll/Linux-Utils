@@ -11,7 +11,7 @@
 - [Sublime text](http://www.sublimetext.com/3)
 - [Timeshift](http://www.teejeetech.in/p/timeshift.html)
 - [Ocenaudio](http://www.ocenaudio.com)
-- [VPN Client](https://fruho.com)
+- [Fruho VPN Client](https://fruho.com)
 - [Nitro Task](http://nitrotasks.com/)
 
 ## Brackets [Website](http://brackets.io/)
@@ -45,8 +45,7 @@ curl http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 !#:3
 
 ### Use:
 
-
-#### Uso (cuando es expresion regular la busqueda deber ir en comillas simples)
+#### Basic (use semicolon for regular expression)
 
 ```bash
 ack SEARCH
@@ -65,7 +64,7 @@ ack 'SEARCH'
 ack -l 'pattern' | xargs perl -pi -E 's/pattern/replacement/g'
 ```
 
-#### ack - Combinar
+#### ack - Combine
 
 ```bash
 ack -l '^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$' | xargs perl -pi -E 's/^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$/REPLACE/g'
@@ -238,15 +237,15 @@ sudo apt -y install xbmc
 
 ```bash
 $ sudo apt install -y \
-                php7.0 \
-                php7.0-fpm \
-                php7.0-mysql \
-                php7.0-sqlite3 \
-                php7.0-mcrypt \
-                php7.0-mbstring \
-                php7.0-xml \
-                php7.0-curl \
-                mcrypt
+                      php7.0 \
+                      php7.0-fpm \
+                      php7.0-mysql \
+                      php7.0-sqlite3 \
+                      php7.0-mcrypt \
+                      php7.0-mbstring \
+                      php7.0-xml \
+                      php7.0-curl \
+                      mcrypt
 ```
 
 
@@ -376,17 +375,18 @@ sudo apt install -y xdman
 - Pre:
 
 ```bash
-sudo apt install -y build-essential \
-                        curl \
-                        git \
-                        m4 \
-                        ruby \
-                        texinfo \
-                        libbz2-dev \
-                        libcurl4-openssl-dev \
-                        libexpat-dev \
-                        libncurses-dev \
-                        zlib1g-dev
+sudo apt install -y \
+                    build-essential \
+                    curl \
+                    git \
+                    m4 \
+                    ruby \
+                    texinfo \
+                    libbz2-dev \
+                    libcurl4-openssl-dev \
+                    libexpat-dev \
+                    libncurses-dev \
+                    zlib1g-dev
 ```
 
 - Install:
