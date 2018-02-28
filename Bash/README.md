@@ -50,19 +50,19 @@ $ sudo sh -c "TEXT_TO_INSERT' > ./myfile.txt"
 #
 cat >> PATH/TO/FILE << "EOF"
 {
-  "apps": [{
-    "name": "rocket.chat",
-    "script": "/opt/rocket.chat/bundle/main.js",
-    "out_file": "/opt/rocket.chat/logs/app.log",
-    "error_file": "/opt/rocket.chat/logs/err.log",
-    "port": "80",
-    "env": {
-      "MONGO_URL": "mongodb://localhost:27017/rocketchat",
-      "MONGO_OPLOG_URL": "mongodb://localhost:27017/local",
-      "ROOT_URL": "http://localhost.com:80",
-      "PORT": "80"
-    }
-  }]
+"apps": [{
+"name": "rocket.chat",
+"script": "/opt/rocket.chat/bundle/main.js",
+"out_file": "/opt/rocket.chat/logs/app.log",
+"error_file": "/opt/rocket.chat/logs/err.log",
+"port": "80",
+"env": {
+"MONGO_URL": "mongodb://localhost:27017/rocketchat",
+"MONGO_OPLOG_URL": "mongodb://localhost:27017/local",
+"ROOT_URL": "http://localhost.com:80",
+"PORT": "80"
+}
+}]
 }
 EOF
 ```
@@ -82,55 +82,55 @@ sed -i "s/SEARCH/REPLACE/" ./myfile.txt
 ## Count file with jquery
 
 ```sh
-    ack -l -r '(<script)(.*?)(jquery)(.*?)(</script>)' . | wc -l
+ack -l -r '(<script)(.*?)(jquery)(.*?)(</script>)' . | wc -l
 ```
 
 
 ## Count php files
 
 ```sh
-    ack -f --php | wc -l
+ack -f --php | wc -l
 ```
 
 
 ## Show lines with the word 'jquery'
 
 ```sh
-    ack 'jquery'
+ack 'jquery'
 ```
 
 
 ## Show lines with the word 'jquery' in php files
 
 ```sh
-    ack --php 'jquery'
+ack --php 'jquery'
 ```
 
 ## List php files
 
 
 ```sh
-    ack -f --php
+ack -f --php
 ```
 
 
 ## Count number of lines for each file and total
 
 ```sh
-    find . -name '*.php' | xargs wc -l
+find . -name '*.php' | xargs wc -l
 ```
 
 
 ## Loop
 
 ```sh
-    find . -name '*.php' |   while read file; do
-      [code ...]
-    done
+find . -name '*.php' |   while read file; do
+[code ...]
+done
 ```
 
 ```sh
-    find . -name '*.php' |   while read file; do; awk  '/jquery/ { print $0}' $file; done
+find . -name '*.php' |   while read file; do; awk  '/jquery/ { print $0}' $file; done
 ```
 
 
@@ -138,15 +138,15 @@ sed -i "s/SEARCH/REPLACE/" ./myfile.txt
 
 ```sh
 function func_all () {
-    cd $2
-    echo -e "# | :::::: Repo: $1"
-  if [ -n "$(git status --porcelain)" ]; then
-    git status
-  else
-    echo -e "${green}CLEAN${RS}";
-    git branch
-    echo ""
-  fi
+cd $2
+echo -e "# | :::::: Repo: $1"
+if [ -n "$(git status --porcelain)" ]; then
+git status
+else
+echo -e "${green}CLEAN${RS}";
+git branch
+echo ""
+fi
 }
 ```
 
@@ -155,8 +155,8 @@ function func_all () {
 
 ```sh
 if [[ $(git remote -v ) != *gober* ]]; then
-  echo -e "${red}Branch Incorrecta ${RS}"
-  git remote -v
+echo -e "${red}Branch Incorrecta ${RS}"
+git remote -v
 fi
 ```
 
@@ -164,9 +164,9 @@ fi
 
 ```sh
 function fun_salir () {
-  echo "Presione ENTER para salir."
-  read x
-  exit
+echo "Presione ENTER para salir."
+read x
+exit
 }
 ```
 
@@ -175,16 +175,16 @@ function fun_salir () {
 
 ```sh
 confirm () {
-    # call with a prompt string or use a default
-    read -r -p "${1:-Esta Seguro? [s/N]} " response
-    case $response in
-        [sS])
-            echo "SI"
-            ;;
-        *)
-            exit
-            ;;
-    esac
+# call with a prompt string or use a default
+read -r -p "${1:-Esta Seguro? [s/N]} " response
+case $response in
+  [sS])
+      echo "SI"
+      ;;
+  *)
+      exit
+      ;;
+esac
 }
 
 ```
@@ -211,15 +211,15 @@ EOF
 ```sh
 #!/bin/bash
 array=(
-    "./informes/general/con_cumplimientoe.php"
-    "./scripts/php/seguridad3.php"
-    "./scripts/php/seguridadmain.php"
+"./informes/general/con_cumplimientoe.php"
+"./scripts/php/seguridad3.php"
+"./scripts/php/seguridadmain.php"
 )
 
 for ix in ${!array[*]};
 do
-    # awk '$0 ~ str{print NR-1 FS b}{b=$0}' str="conexion.php" "${array[$ix]}"
-    head -15 "${array[$ix]}"    >> cabeceras.txt
+# awk '$0 ~ str{print NR-1 FS b}{b=$0}' str="conexion.php" "${array[$ix]}"
+head -15 "${array[$ix]}"    >> cabeceras.txt
 done
 ```
 
@@ -266,14 +266,14 @@ find . -name '*.*' \
 ## Get current directory name without full path
 
 ```sh
-  result=${PWD##*/}          # to assign to a variable
+result=${PWD##*/}          # to assign to a variable
 
-  printf '%s\n' "${PWD##*/}" # to print to stdout
-                             # ...more robust than echo for unusual names
-                             #    (consider a directory named -e or -n)
+printf '%s\n' "${PWD##*/}" # to print to stdout
+                       # ...more robust than echo for unusual names
+                       #    (consider a directory named -e or -n)
 
-  printf '%q\n' "${PWD##*/}" # to print to stdout, quoted for use as shell input
-                           # ...useful to make hidden characters readable.
+printf '%q\n' "${PWD##*/}" # to print to stdout, quoted for use as shell input
+                     # ...useful to make hidden characters readable.
 ```
 
 
@@ -281,9 +281,9 @@ find . -name '*.*' \
 
 ```sh
 func_delete_beetwen () {
-  sed -e "/${1}/,/${2}/d" $3 > $3_tmp
-  cp $3_tmp $3
-  rm $3_tmp
+sed -e "/${1}/,/${2}/d" $3 > $3_tmp
+cp $3_tmp $3
+rm $3_tmp
 }
 
 WORD1='# |::::::::::::::::::>>>antigen' # |<=== Config This
@@ -297,11 +297,11 @@ func_delete_beetwen "$WORD1" "$WORD2" "$FILEDEL"
 ## Echo message
 
 ```sh
-  function_title () {
-    echo "# | ::::::::::::::::::::::::::::::::::: | #"
-    echo "# | $1"
-    echo "# | ::::::::::::::::::::::::::::::::::: | #"
-  }
+function_title () {
+echo "# | ::::::::::::::::::::::::::::::::::: | #"
+echo "# | $1"
+echo "# | ::::::::::::::::::::::::::::::::::: | #"
+}
 ```
 
 
@@ -310,21 +310,21 @@ func_delete_beetwen "$WORD1" "$WORD2" "$FILEDEL"
 ```sh
 if [ $(id -u) -eq 0 ]; then
 # read -p "Enter username : " username
-  username="mmm"
+username="mmm"
 # read -s -p "Enter password : " password
-  password="mmm"
-  egrep "^$username" /etc/passwd >/dev/null
-  if [ $? -eq 0 ]; then
-    echo "$username exists!"
-    exit 1
-  else
-    pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
-    useradd -m -p $pass $username
-    ## echo "Failed to add a user!"
-  fi
+password="mmm"
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+echo "$username exists!"
+exit 1
 else
-  echo "Only root may add a user to the system"
-  exit 2
+pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
+useradd -m -p $pass $username
+## echo "Failed to add a user!"
+fi
+else
+echo "Only root may add a user to the system"
+exit 2
 fi
 ```
 
@@ -347,91 +347,91 @@ for K in "${!MYMAP[@]}"; do echo $K; done
 ## Count file with jquery
 
 ```sh
-    ack -l -r '(<script)(.*?)(jquery)(.*?)(</script>)' . | wc -l
-    ack -l --php '../scripts/js/jquery-1.9.1.js' | wc -l
+ack -l -r '(<script)(.*?)(jquery)(.*?)(</script>)' . | wc -l
+ack -l --php '../scripts/js/jquery-1.9.1.js' | wc -l
 ```
 
 
 ## Count php files
 
 ```sh
-    ack -f --php | wc -l
+ack -f --php | wc -l
 ```
 
 
 ## Show lines with the word 'jquery'
 
 ```sh
-    ack 'jquery'
+ack 'jquery'
 ```
 
 
 ## Show lines with the word 'jquery' in php files
 
 ```sh
-    ack --php 'jquery'
+ack --php 'jquery'
 ```
 
 
 ## List php files
 
 ```sh
-    ack -f --php
+ack -f --php
 ```
 
 
 ## Count number of lines for each file and total
 
 ```sh
-    find . -name '*.php' | xargs wc -l
+find . -name '*.php' | xargs wc -l
 ```
 
 
 ## Loop
 
 ```sh
-    find . -name '*.php' |   while read file; do
-      [code ...]
-    done
+find . -name '*.php' |   while read file; do
+[code ...]
+done
 
-    find . -name '*.php' |   while read file; do; awk  '/jquery/ { print $0}' $file; done
+find . -name '*.php' |   while read file; do; awk  '/jquery/ { print $0}' $file; done
 ```
 
 
 ## View encoding in php files
 
 ```sh
-    find . -name '*.php' |   while read file; do; file -bi  $file; done
+find . -name '*.php' |   while read file; do; file -bi  $file; done
 ```
 
 
 ## Remove BOM carachters
 
 ```sh
-    find . -name '*.php' |   while read file; do; sed -i 's/\xEF\xBB\xBF//g' $file ; done
+find . -name '*.php' |   while read file; do; sed -i 's/\xEF\xBB\xBF//g' $file ; done
 ```
 
 
 ## Check if command exist or app
 
 ```sh
-  git --version 2>&1 >/dev/null
-  GIT_IS_AVAILABLE=$?
-  if [ $GIT_IS_AVAILABLE -eq 0 ]; then #...
+git --version 2>&1 >/dev/null
+GIT_IS_AVAILABLE=$?
+if [ $GIT_IS_AVAILABLE -eq 0 ]; then #...
 ```
 
 ## View Folder size
 
 ```sh
-  $ du -hs .
-  $ du * | sort -n
+$ du -hs .
+$ du * | sort -n
 
-  $ du -h [FOLDER]
-  $ du -hc [FOLDER]
-  $ du -hs [FOLDER]
-  $ du -hs .
-  $ du -hs *
-  $ du -hs . --exclude="*.txt"
+$ du -h [FOLDER]
+$ du -hc [FOLDER]
+$ du -hs [FOLDER]
+$ du -hs .
+$ du -hs *
+$ du -hs . --exclude="*.txt"
 
 # Find 10 largest files/directories
 $ find . -type f -exec du -Sh {} + | sort -rh | head -n 15
@@ -445,140 +445,74 @@ $ du -Sh | sort -rh | head -n 15
 ## Make the "tree" command pretty and useful by default**
 
 ```sh
-    alias tree="tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst"
+alias tree="tree -CAFa -I 'CVS|*.*.package|.svn|.git' --dirsfirst"
 ```
 
-
-## Find
-
--  **Get all extensions and their respective file count in a directory**
-
-```sh
-  $ find ./ -type f | grep -E ".*\.[a-zA-Z0-9]*$" | sed -e 's/.*\(\.[a-zA-Z0-9]*\)$/\1/' | sort | uniq -c | sort -n
-```
-
-
-- **Find executable files
-
-```sh
-  $ find . -perm /a=x -type f
-```
-
-- **Find executable files excluding .git folder
-
-```sh
-  $ find . -perm /a=x -type f -not -path "./.git/*"
-```
-
-
-- **Find file on specific day**
-
-```sh
-  $ find ./ -type f -ls | grep 'jun'
-```
-
-- **Find executable files**
-
-```sh
-  $ find . -perm /a=x -type f
-```
-
-- **Find and count files with extention**
-
-```sh
-  $ find . -type f -name "*.php" | wc -l
-```
-
-- **Count all the lines of code in a directory recursively**
-
-```sh
-  $ find . -name '*.php' | xargs wc -l
-```
-
-- **Find modified files on especific day**
-
-```sh
-  $ find ./ -type f -ls | grep 'jun'
-
-    #with exclude directory
-    $ find ./ -type f ! -path "./.git/*" -ls | grep 'jun'
-```
-
-- **Find Dupicate files**
-
-```sh
-  $ find -not -empty -type f -printf "%s\n" | sort -rn | uniq -d | xargs -I{} -n1 find -type f -size {}c -print0 | xargs -0 md5sum | sort | uniq -w32 --all-repeated=separate
-
-    # Duplicate Files
-    $ sudo apt-get install -y fdupes
-
-  $ fdupes -r .
-```
 
 ## Users
 
 - **Show users - home**
 
 ```sh
-  $ cat /etc/passwd | grep "/home" |cut -d: -f1
+$ cat /etc/passwd | grep "/home" |cut -d: -f1
 ```
 
 - **Show users all and uid**
 
 ```sh
-  $ awk -F":" '{ print "User: " $1 "\t\tuid:" $3 }' /etc/passwd
+$ awk -F":" '{ print "User: " $1 "\t\tuid:" $3 }' /etc/passwd
 ```
 
 - **Show users all**
 
 ```sh
-  $ cat /etc/passwd | cut -d ":" -f1
+$ cat /etc/passwd | cut -d ":" -f1
 ```
 
 ## wget
 
 ```sh
-  $ wget -r -l1 --no-parent -nH -nd -P/tmp -A".gif,.jpg,.png" http://example.com/images
+$ wget -r -l1 --no-parent -nH -nd -P/tmp -A".gif,.jpg,.png" http://example.com/images
 ```
 
 ## Get External IP**
 
 ```sh
-  $ curl http://ipecho.net/plain
+$ curl http://ipecho.net/plain
 
-  $ lynx --dump http://ipecho.net/plain
+$ lynx --dump http://ipecho.net/plain
 
-  $ curl http://whatismyip.org/
+$ curl http://whatismyip.org/
 ```
 
 ## Get Internal IP**
 
 ```sh
-  $ /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'
+$ /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'
 ```
 
 ## Todos los paquetes instaldados**
 
 ```sh
-  $ dpkg --get-selections >> paquetes-instalados.txt
+$ dpkg --get-selections >> paquetes-instalados.txt
 
-  $ grep install /var/log/dpkg.log >> paquetes-instalados.txt
+$ grep install /var/log/dpkg.log >> paquetes-instalados.txt
 ```
 
 ## Rsync
 
 ```sh
-  $ rsync -Aax owncloud/ owncloud-`date +"%Y%m%d"`-backup/
+$ rsync -Aax owncloud/ owncloud-`date +"%Y%m%d"`-backup/
 
-  $ rsync -Aaxzv --progress estampillas/ estampillas-`date +"%Y%m%d"`-backup/
+$ rsync -Aaxzv --progress estampillas/ estampillas-`date +"%Y%m%d"`-backup/
 
-  $ rsync -Aaxzv  vm28:/var/www/html/estampillas /home/uu/Documents
+$ rsync -Aaxzv  vm28:/var/www/html/estampillas /home/uu/Documents
 ```
 
 ##  Delete all and just keep the 3 recent backups
 
 ```bash
-    cd "${FOLDER_BACKUP}"  && (ls -t | head -n 3;ls) | sort | uniq -u | sed -e 's,.*,"&",g' | xargs rm
+cd "${FOLDER_BACKUP}"  && (ls -t | head -n 3;ls) | sort | uniq -u | sed -e 's,.*,"&",g' | xargs rm
 ```
 
 
@@ -590,10 +524,10 @@ PROFILE=( $(find $SCRIPT_PATH -maxdepth 1 -type d -printf '%P\n') )
 
 for ix in ${!PROFILE[*]}; do
 cd profiles
-    if [ ! -d "${PROFILE[$ix]}" ]; then
-        mkdir "${PROFILE[$ix]}"
-        echo "Folder ${PROFILE[$ix]} created"
-    fi
+if [ ! -d "${PROFILE[$ix]}" ]; then
+  mkdir "${PROFILE[$ix]}"
+  echo "Folder ${PROFILE[$ix]} created"
+fi
 cd ..
 done
 ```
@@ -610,36 +544,36 @@ pwd=$(pwd)
 ## Finding Lines Containing Certain Words
 
 ```bash
-    ^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$
+^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$
 ```
 
 ## Search and Replace
 
 ```bash
-    ack -l 'pattern' | xargs perl -pi -E 's/pattern/replacement/g'
+ack -l 'pattern' | xargs perl -pi -E 's/pattern/replacement/g'
 ```
 
 ## Combinar
 
 ```bash
-    ack -l '^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$' | xargs perl -pi -E 's/^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$/REPLACE/g'
+ack -l '^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$' | xargs perl -pi -E 's/^.*\b(SEARCH1|SEARCH2|SEARCH3)\b.*$/REPLACE/g'
 ```
 
 ## Intalar ack
 
 ```bash
-    sudo apt-get install ack
+sudo apt-get install ack
 
-    OR
+OR
 
-    curl http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 !#:3
+curl http://betterthangrep.com/ack-standalone > ~/bin/ack && chmod 0755 !#:3
 ```
 
 ## Uso (cuando es expresion regular la busqueda deber ir en comillas simples)
 
 ```bash
-    ack SEARCH
-    ack 'SEARCH'
+ack SEARCH
+ack 'SEARCH'
 ```
 
 ### Cron
