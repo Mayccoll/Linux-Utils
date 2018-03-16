@@ -324,19 +324,32 @@ $ sudo apt install -y trickle
 
 ## Composer, Laravel, Artisan
 
+
+### Install Composer
+
 ```bash
 $
-sudo apt-get install php5-cli
+sudo apt-get install php-cli
 curl -sS https://getcomposer.org/installer | php
-
 sudo mv composer.phar /usr/local/bin/composer
 
+cat >> ${HOME}/.zshrc <<'endmsg'
+# | ::::::: Composer ::::::::::::::::::::::::::::::::::::::::::::::::::::::: >>>
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+# | ::::::: Composer ::::::::::::::::::::::::::::::::::::::::::::::::::::::: <<<
+endmsg
+```
+
+
+### Install Laravel Installer
+
+```bash
 composer global require "laravel/installer=~1.1"
+```
 
-echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ${HOME}/.zshrc
+### Add Artisan alias
 
-echo 'alias artisan="php artisan"' >> ${HOME}/.zshrc
-
+```bash
 cat >> ${HOME}/.zshrc <<'endmsg'
 # | ::::::: Artisan php :::::::::::::::::::::::::::::::::::::::::::::::::::: >>>
 alias artisan="php artisan"
