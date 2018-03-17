@@ -53,7 +53,7 @@ Collection of scripts to install some essential programs.
 $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYOP)
+[view script raw :page_facing_up:](https://git.io/vKYOP)
 
 ```bash
 # - Software-properties-common
@@ -73,7 +73,7 @@ $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKY3A)
+[view script raw :page_facing_up:](https://git.io/vKY3A)
 
 ```bash
 # - Essential tools for compiling from sources
@@ -90,7 +90,7 @@ $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYsm)
+[view script raw :page_facing_up:](https://git.io/vKYsm)
 
 ```bash
 # - Zsh
@@ -107,7 +107,7 @@ $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYss && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYss)
+[view script raw :page_facing_up:](https://git.io/vKYss)
 
 ### Install Stars 
 
@@ -115,7 +115,7 @@ $ wget -O xw  https://git.io/vKYss && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsW && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYsW)
+[view script raw :page_facing_up:](https://git.io/vKYsW)
 
 ### Install Design Tools 
 
@@ -123,7 +123,7 @@ $ wget -O xw  https://git.io/vKYsW && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYsw)
+[view script raw :page_facing_up:](https://git.io/vKYsw)
 
 ```bash
 # - gPick
@@ -136,7 +136,7 @@ $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYsP)
+[view script raw :page_facing_up:](https://git.io/vKYsP)
 
 ```bash
 # - Samba
@@ -153,7 +153,7 @@ $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYsS)
+[view script raw :page_facing_up:](https://git.io/vKYsS)
 
 ```bash
 #  - Grub Customizer
@@ -165,7 +165,7 @@ $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYsd)
+[view script raw :page_facing_up:](https://git.io/vKYsd)
 
 ```bash
 # - Pyrenamer
@@ -181,7 +181,7 @@ $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYCx)
+[view script raw :page_facing_up:](https://git.io/vKYCx)
 
 ### Install Node.js 
 
@@ -189,7 +189,7 @@ $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYG9)
+[view script raw :page_facing_up:](https://git.io/vKYG9)
 
 ```bash
 # - Nodejs
@@ -202,7 +202,7 @@ $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYGb && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYGb)
+[view script raw :page_facing_up:](https://git.io/vKYGb)
 
 ### Install Ruby 
 
@@ -210,7 +210,7 @@ $ wget -O xw  https://git.io/vKYGb && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYZT && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYZT)
+[view script raw :page_facing_up:](https://git.io/vKYZT)
 
 ### Install Ruby 2.2.1 
 
@@ -218,7 +218,7 @@ $ wget -O xw  https://git.io/vKYZT && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYZI && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYZI)
+[view script raw :page_facing_up:](https://git.io/vKYZI)
 
 ### Install Syncthing 
 
@@ -226,7 +226,7 @@ $ wget -O xw  https://git.io/vKYZI && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYZY && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYZY)
+[view script raw :page_facing_up:](https://git.io/vKYZY)
 
 ### Fix Locale 
 
@@ -234,7 +234,7 @@ $ wget -O xw  https://git.io/vKYZY && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYZi && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYZi)
+[view script raw :page_facing_up:](https://git.io/vKYZi)
 
 ### Install zsh no root 
 
@@ -242,7 +242,7 @@ $ wget -O xw  https://git.io/vKYZi && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYZM && chmod +x xw && ./xw && rm xw
 ```
 
-[view script raw :link:](https://git.io/vKYZM)
+[view script raw :page_facing_up:](https://git.io/vKYZM)
 
 --------------------------------------------------------------------------------
 
