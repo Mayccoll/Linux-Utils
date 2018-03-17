@@ -48,11 +48,12 @@ Collection of regularly used commands
 Collection of scripts to install some essential programs.
 
 ### Install Eessentials 
-[view script raw :link:](https://git.io/vKYOP)
 
 ```bash
 $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYOP)
 
 ```bash
 # - Software-properties-common
@@ -67,11 +68,12 @@ $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install Basics 
-[view script raw :link:](https://git.io/vKY3A)
 
 ```bash
 $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKY3A)
 
 ```bash
 # - Essential tools for compiling from sources
@@ -83,11 +85,12 @@ $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install ZSH 
-[view script raw :link:](https://git.io/vKYsm)
 
 ```bash
 $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYsm)
 
 ```bash
 # - Zsh
@@ -99,25 +102,28 @@ $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install Alias 
-[view script raw :link:](https://git.io/vKYss)
 
 ```bash
 $ wget -O xw  https://git.io/vKYss && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYss)
+
 ### Install Stars 
-[view script raw :link:](https://git.io/vKYsW)
 
 ```bash
 $ wget -O xw  https://git.io/vKYsW && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYsW)
+
 ### Install Design Tools 
-[view script raw :link:](https://git.io/vKYsw)
 
 ```bash
 $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYsw)
 
 ```bash
 # - gPick
@@ -125,11 +131,12 @@ $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install Useful Tools 
-[view script raw :link:](https://git.io/vKYsP)
 
 ```bash
 $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYsP)
 
 ```bash
 # - Samba
@@ -141,22 +148,24 @@ $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install Customize Tools 
-[view script raw :link:](https://git.io/vKYsS)
 
 ```bash
 $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYsS)
 
 ```bash
 #  - Grub Customizer
 ```
 
 ### Install Extras 
-[view script raw :link:](https://git.io/vKYsd)
 
 ```bash
 $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYsd)
 
 ```bash
 # - Pyrenamer
@@ -167,18 +176,20 @@ $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install Docker 
-[view script raw :link:](https://git.io/vKYCx)
 
 ```bash
 $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYCx)
+
 ### Install Node.js 
-[view script raw :link:](https://git.io/vKYG9)
 
 ```bash
 $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYG9)
 
 ```bash
 # - Nodejs
@@ -186,46 +197,52 @@ $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
 ```
 
 ### Install Python 
-[view script raw :link:](https://git.io/vKYGb)
 
 ```bash
 $ wget -O xw  https://git.io/vKYGb && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYGb)
+
 ### Install Ruby 
-[view script raw :link:](https://git.io/vKYZT)
 
 ```bash
 $ wget -O xw  https://git.io/vKYZT && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYZT)
+
 ### Install Ruby 2.2.1 
-[view script raw :link:](https://git.io/vKYZI)
 
 ```bash
 $ wget -O xw  https://git.io/vKYZI && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYZI)
+
 ### Install Syncthing 
-[view script raw :link:](https://git.io/vKYZY)
 
 ```bash
 $ wget -O xw  https://git.io/vKYZY && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYZY)
+
 ### Fix Locale 
-[view script raw :link:](https://git.io/vKYZi)
 
 ```bash
 $ wget -O xw  https://git.io/vKYZi && chmod +x xw && ./xw && rm xw
 ```
 
+[view script raw :link:](https://git.io/vKYZi)
+
 ### Install zsh no root 
-[view script raw :link:](https://git.io/vKYZM)
 
 ```bash
 $ wget -O xw  https://git.io/vKYZM && chmod +x xw && ./xw && rm xw
 ```
+
+[view script raw :link:](https://git.io/vKYZM)
 
 --------------------------------------------------------------------------------
 
