@@ -36,7 +36,7 @@ This is a collection of programs, scripts, notes and personal knowledge about Li
 Collection of regularly used commands
 
 <a href="./commands.md" rel="nofollow">
-![Linux Commands](./Images/button-green.png)
+    <img src="./Images/button-green.png" alt="Linux Commands]">
 </a>
 
 --------------------------------------------------------------------------------
