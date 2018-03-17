@@ -8,10 +8,24 @@ This is a collection of programs, scripts, notes and personal knowledge about Li
 
 ### Index
 
-- <a href="#linux-commands">Linux Commands</a>
-- <a href="#essential-programs">Essential Programs</a>
-- <a href="#more-basic-programs">More Basic programs</a>
-- <a href="#themes-and-icons">Themes and Icons</a>
+-   <a href="#linux-commands">Linux Commands</a>
+-   <a href="#essential-programs">Essential Programs</a>
+  -   <a href="#install-essentials">Install Eessentials</a>
+  -   <a href="#install-basics">Install Basics</a>
+  -   <a href="#install-zsh">Install ZSH</a>
+  -   <a href="#install-stars">Install Stars</a>
+  -   <a href="#install-design-tools">Install Design Tools</a>
+  -   <a href="#install-useful-tools">Install Useful Tools</a>
+  -   <a href="#install-customize">Install Customize Tools</a>
+  -   <a href="#install-extras">Install Extras</a>
+  -   <a href="#install-docker">Install Docker</a>
+  -   <a href="#install-node.js">Install Node.js</a>
+  -   <a href="#install-python">Install Python</a>
+  -   <a href="#install-ruby">Install Ruby</a>
+  -   <a href="#install-syncthing">Install Syncthing</a>
+-   <a href="#more-basic-programs">More Basic programs</a>
+-   <a href="#more-programs">More Programs</a>
+-   <a href="#themes-and-icons">Themes and Icons</a>
 
 --------------------------------------------------------------------------------
 
@@ -119,7 +133,7 @@ $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 # - Meld
 ```
 
-### Install Customize
+### Install Customize Tools
 
 ```bash
 $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
@@ -149,7 +163,7 @@ $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
 ```
 
-### Install Nodejs
+### Install Node.js
 
 ```bash
 $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
