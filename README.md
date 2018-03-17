@@ -8,11 +8,10 @@ This is a collection of programs, scripts, notes and personal knowledge about Li
 
 ### Index
 
-
--   [Linux Commands](linux-commands)
--   [Essential Programs](#essential-programs)
--   [More Basic programs](#more-basic-programs)
--   [Themes and Icons](themes-and-icons)
+- <a href="#linux-commands">Linux Commands</a>
+- <a href="#essential-programs">Essential Programs</a>
+- <a href="#more-basic-programs">More Basic programs</a>
+- <a href="#themes-and-icons">Themes and Icons</a>
 
 --------------------------------------------------------------------------------
 
