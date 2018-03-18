@@ -25,6 +25,7 @@ This is a collection of programs, scripts, notes and personal knowledge about Li
     -   <a href="#install-syncthing">Install Syncthing</a>
 -   <a href="#more-basic-programs">More Basic programs</a>
 -   <a href="#more-programs">More Programs</a>
+-   <a href="#npm-basics">npm Basics</a>
 -   <a href="#themes-and-icons">Themes and Icons</a>
 
 --------------------------------------------------------------------------------
@@ -270,6 +271,17 @@ sudo apt install -y gparted
 sudo apt install -y hardinfo
 sudo apt install -y inkscape
 sudo apt install -y uget
+```
+
+### Install Yarn
+
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt-get update && \
+sudo apt-get install -y yarn
 ```
 
 ### Install Ansible
