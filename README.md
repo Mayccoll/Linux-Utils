@@ -597,6 +597,119 @@ sudo apt-get install -y gnome
 
 -   [Mkdocs Material](https://squidfunk.github.io/mkdocs-material/extensions/admonition/)
 
+#### 01. Pre-Install
+
+```sh
+sudo apt-get install -y \
+    python-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    antiword \
+    poppler-utils \
+    pstotext
+```
+
+```sh
+sudo easy_install --upgrade google-api-python-client
+```
+##### pip
+
+```
+wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py -O - | python - --user
+```
+
+#### 02 Install Mkdocs and Mkdocs Material
+
+```sh
+pip install --user mkdocs
+```
+
+```sh
+pip install --user mkdocs-material
+```
+
+```sh
+pip install --user fontawesome_markdown
+```
+
+```sh
+pip install --user pymdown-extensions
+```
+
+#### MkDocs Help
+
+```txt
+Usage: mkdocs [OPTIONS] COMMAND [ARGS]...
+
+  MkDocs - Project documentation with Markdown.
+
+Options:
+  -V, --version  Show the version and exit.
+  -q, --quiet    Silence warnings
+  -v, --verbose  Enable verbose output
+  -h, --help     Show this message and exit.
+
+Commands:
+  build      Build the MkDocs documentation
+  gh-deploy  Deploy your documentation to GitHub Pages
+  new        Create a new MkDocs project
+  serve      Run the builtin development server
+```
+
+#### Basic Config File
+
+##### Yalm file
+
+Add in ```mkdocs.yml```
+
++++
+```yaml
+site_name: Atiica Docs
+
+theme:
+  name: 'material'
+  logo: 'images/logo.png'
+  favicon: 'assets/images/favicon.ico'
+  palette:
+      primary: 'light-blue'
+      accent: 'pink'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+extra_css:
+  - https://use.fontawesome.com/releases/v5.0.6/css/all.css
+  - vendors/simpleLightbox/simpleLightbox.min.css
+  - ./css/main.min.css
+
+extra_javascript:
+  - https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+  - vendors/simpleLightbox/simpleLightbox.min.js
+  - ./js/main.min.js
+
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji
+```
+
+
+--------------------------------------------------------------------------------
+
+## npm Basics
+
+![Linux Commands](./Images/title-banner.png)
+
+```bash
+npm i -g nativefier
+npm i -g localtunnel
+npm i -g thanks
+npm i -g jshint
+npm i -g eslint
+npm i -g align-yaml
+npm i -g fkill-cli
+```
 
 --------------------------------------------------------------------------------
 
