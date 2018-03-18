@@ -36,7 +36,7 @@ This is a collection of programs, scripts, notes and personal knowledge about Li
 Collection of regularly used commands
 
 <a href="./commands.md" rel="nofollow">
-    <img src="./Images/button-green.png" alt="Linux Commands]">
+    <img src="./Images/button-green.png" alt="Linux Commands">
 </a>
 
 --------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ Collection of regularly used commands
 
 Collection of scripts to install some essential programs.
 
-### Install Eessentials 
+### Install Essentials
 
 ```bash
 $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
@@ -67,7 +67,7 @@ $ wget -O xw  https://git.io/vKYOP && chmod +x xw && ./xw && rm xw
 # - Ack
 ```
 
-### Install Basics 
+### Install Basics
 
 ```bash
 $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
@@ -84,7 +84,7 @@ $ wget -O xw  https://git.io/vKY3A && chmod +x xw && ./xw && rm xw
 # - Git Extras
 ```
 
-### Install ZSH 
+### Install ZSH
 
 ```bash
 $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
@@ -101,7 +101,7 @@ $ wget -O xw  https://git.io/vKYsm && chmod +x xw && ./xw && rm xw
 # - Awesome Tterminal Fonts
 ```
 
-### Install Alias 
+### Install Alias
 
 ```bash
 $ wget -O xw  https://git.io/vKYss && chmod +x xw && ./xw && rm xw
@@ -109,7 +109,7 @@ $ wget -O xw  https://git.io/vKYss && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYss)
 
-### Install Stars 
+### Install Stars
 
 ```bash
 $ wget -O xw  https://git.io/vKYsW && chmod +x xw && ./xw && rm xw
@@ -117,7 +117,7 @@ $ wget -O xw  https://git.io/vKYsW && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYsW)
 
-### Install Design Tools 
+### Install Design Tools
 
 ```bash
 $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
@@ -130,7 +130,7 @@ $ wget -O xw  https://git.io/vKYsw && chmod +x xw && ./xw && rm xw
 # - Shutter
 ```
 
-### Install Useful Tools 
+### Install Useful Tools
 
 ```bash
 $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
@@ -147,7 +147,7 @@ $ wget -O xw  https://git.io/vKYsP && chmod +x xw && ./xw && rm xw
 # - Meld
 ```
 
-### Install Customize Tools 
+### Install Customize Tools
 
 ```bash
 $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
@@ -159,7 +159,7 @@ $ wget -O xw  https://git.io/vKYsS && chmod +x xw && ./xw && rm xw
 #  - Grub Customizer
 ```
 
-### Install Extras 
+### Install Extras
 
 ```bash
 $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
@@ -175,7 +175,7 @@ $ wget -O xw  https://git.io/vKYsd && chmod +x xw && ./xw && rm xw
 # - Nemo Rabbitvcs
 ```
 
-### Install Docker 
+### Install Docker
 
 ```bash
 $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
@@ -183,7 +183,7 @@ $ wget -O xw  https://git.io/vKYCx && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYCx)
 
-### Install Node.js 
+### Install Node.js
 
 ```bash
 $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
@@ -196,7 +196,7 @@ $ wget -O xw  https://git.io/vKYG9 && chmod +x xw && ./xw && rm xw
 # - npm
 ```
 
-### Install Python 
+### Install Python
 
 ```bash
 $ wget -O xw  https://git.io/vKYGb && chmod +x xw && ./xw && rm xw
@@ -204,7 +204,7 @@ $ wget -O xw  https://git.io/vKYGb && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYGb)
 
-### Install Ruby 
+### Install Ruby
 
 ```bash
 $ wget -O xw  https://git.io/vKYZT && chmod +x xw && ./xw && rm xw
@@ -212,7 +212,7 @@ $ wget -O xw  https://git.io/vKYZT && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYZT)
 
-### Install Ruby 2.2.1 
+### Install Ruby 2.2.1
 
 ```bash
 $ wget -O xw  https://git.io/vKYZI && chmod +x xw && ./xw && rm xw
@@ -220,7 +220,7 @@ $ wget -O xw  https://git.io/vKYZI && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYZI)
 
-### Install Syncthing 
+### Install Syncthing
 
 ```bash
 $ wget -O xw  https://git.io/vKYZY && chmod +x xw && ./xw && rm xw
@@ -228,7 +228,7 @@ $ wget -O xw  https://git.io/vKYZY && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYZY)
 
-### Fix Locale 
+### Fix Locale
 
 ```bash
 $ wget -O xw  https://git.io/vKYZi && chmod +x xw && ./xw && rm xw
@@ -236,7 +236,7 @@ $ wget -O xw  https://git.io/vKYZi && chmod +x xw && ./xw && rm xw
 
 [view script raw :page_facing_up:](https://git.io/vKYZi)
 
-### Install zsh no root 
+### Install zsh no root
 
 ```bash
 $ wget -O xw  https://git.io/vKYZM && chmod +x xw && ./xw && rm xw
@@ -325,7 +325,8 @@ sudo apt install -y neofetch
 monitor events [Website](https://github.com/rvoicilas/inotify-tools)
 
 ```bash
-$ sudo apt install -y inotify-tools
+$
+ sudo apt install -y inotify-tools
 ```
 
 ### Install Go For It!
