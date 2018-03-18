@@ -65,8 +65,12 @@ $ kvm-ok
 INFO: /dev/kvm exists
 KVM acceleration can be used
 
-$ sudo apt-get install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils ia32-libs-multiarch
-
+$ sudo apt-get install -y \
+    qemu-kvm \
+    libvirt-bin \
+    ubuntu-vm-builder \
+    bridge-utils \
+    ia32-libs-multiarch
 ```
 
 --------------------------------------------------------------------------------
