@@ -48,7 +48,7 @@ $ sudo sh -c "TEXT_TO_INSERT' > ./myfile.txt"
 
 
 #
-cat >> PATH/TO/FILE << "EOF"
+cat >> PATH/TO/FILE <<'endmsg'
 {
 "apps": [{
 "name": "rocket.chat",
@@ -64,7 +64,7 @@ cat >> PATH/TO/FILE << "EOF"
 }
 }]
 }
-EOF
+endmsg
 ```
 
 ## Find and replace in file
@@ -193,7 +193,7 @@ esac
 ## Insert Text in file
 
 ```sh
-cat > $HOME/.zshrc << "EOF"
+cat >> ${HOME}/.zshrc <<'endmsg'
 !*.php
 !*.html
 !*.js
@@ -201,7 +201,7 @@ cat > $HOME/.zshrc << "EOF"
 
 !*.png
 !*.jpg
-EOF
+endmsg
 ```
 
 
