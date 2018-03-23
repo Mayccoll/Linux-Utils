@@ -309,6 +309,7 @@ sudo apt-get install -y ansible
 -   [Screamingfrog](https://www.screamingfrog.co.uk/seo-spider/)
 -   [Sublime text](http://www.sublimetext.com/3)
 -   [Timeshift](http://www.teejeetech.in/p/timeshift.html)
+-   [Stacer](https://github.com/oguzhaninan/Stacer)
 
 ```bash
 sudo apt install -y calibre
