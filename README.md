@@ -724,6 +724,32 @@ npm i -g align-yaml
 npm i -g fkill-cli
 ```
 
+### Update Node.js modules to latest versions
+
+```bash
+npm install –g npm-check-updates
+```
+
+#### Use:
+
+- Step 1. Check
+
+```bash
+ncu
+```
+
+- Step 2. Update
+
+```bash
+ncu -u
+```
+
+- Step 3. Install
+
+```
+npm install
+```
+
 --------------------------------------------------------------------------------
 
 ## Themes and Icons
