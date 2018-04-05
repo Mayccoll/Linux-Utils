@@ -74,24 +74,6 @@ docker run --name Ubuntu-Lamp \
     -d fauria/lamp
 ```
 
-```bash
-docker exec -it Ubuntu-Lamp bash
-
-apt-get install -y phpmyadmin --fix-missing
-
-apt-get install -y wget
-
-mysql -uroot -padmin123
-
-mysql>
-    use mysql;
-    update user set password=PASSWORD("admin123") where User='root';
-    flush privileges;
-    quit
-
-service apache2 restart
-```
-
 
 #### Nginx :ballot_box_with_check:
 
