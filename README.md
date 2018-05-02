@@ -338,14 +338,12 @@ sudo apt install -y neofetch
 monitor events [Website](https://github.com/rvoicilas/inotify-tools)
 
 ```bash
-$
- sudo apt install -y inotify-tools
+sudo apt install -y inotify-tools
 ```
 
 ### Install Go For It!
 
 ```bash
-$
 sudo add-apt-repository -y ppa:mank319/go-for-it && \
 sudo apt update && \
 sudo apt install -y go-for-it
@@ -389,6 +387,13 @@ alias artisan="php artisan"
 endmsg
 ```
 
+### Qownnotes
+
+```bash
+sudo add-apt-repository -y ppa:pbek/qownnotes && \
+sudo apt-get update && \
+sudo apt-get install -y qownnotes
+```
 
 ### wkhtmltopdf
 
@@ -420,9 +425,9 @@ pandoc latex.md -o latex.pdf
 ### Pulse Audio equalizer
 
 ```bash
-sudo add-apt-repository ppa:nilarimogard/webupd8 && \
+sudo add-apt-repository -y ppa:nilarimogard/webupd8 && \
 sudo apt-get update && \
-sudo apt-get install pulseaudio-equalizer
+sudo apt-get install -y pulseaudio-equalizer
 ```
 
 ### Java 8 or 9
