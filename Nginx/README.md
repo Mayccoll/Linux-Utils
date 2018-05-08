@@ -1,22 +1,4 @@
-
-mysql-server
-mysql-client
-php5
-php5-fpm
-php5-mysql
-phpmyadmin
-libapache2-mod-auth-mysql
-
-
-sudo apt-get install mysql-server mysql-client php5 php5-fpm php5-mysql phpmyadmin libapache2-mod-auth-mysql
-
-
 #### Confing php.ini
-
-
-> php.ini
-
-> /etc/php5/fpm/php.ini
 
 ```bash
 ---
