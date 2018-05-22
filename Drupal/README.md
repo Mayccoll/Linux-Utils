@@ -6,19 +6,6 @@
     git apply PATCH_NAME.patch
 
 
-### Drush
-
-##### Instalar Drush
-
-```bash
-    # Hostgator
-    clone git repo
-    >>> .bashrc
-        +++ export  DRUSH_PHP='/opt/php54/bin/php'
-        +++ alias   drush='~/drush/drush'
-        +++ alias   php='/opt/php54/bin/php'
-```
-
 ##### Drush Comandos
 
 ```bash
