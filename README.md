@@ -349,6 +349,13 @@ sudo apt update && \
 sudo apt install -y go-for-it
 ```
 
+### Peek (Gif)
+
+```bash
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek
+```
 
 ### Composer, Laravel, Artisan
 
